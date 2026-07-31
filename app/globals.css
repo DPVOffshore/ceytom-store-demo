@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* self-hosted via @fontsource — no build-time network fetch, no FOUT */
+  --font-display: "Archivo Variable", "Archivo", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --navy: #012731;
+  --deep: #073d4a;
+  --teal: #078f93;
+  --coral: #eb6a4c;
+  --mist: #e9eef1;
+  --tint: #b7eef1;
+  --rule: rgba(7, 143, 147, 0.22);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #fff;
+  color: var(--navy);
+  font-family: var(--font-body);
+  font-feature-settings: "tnum" 1;
+}
+
+/* ---- type ---- */
+.h-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.022em;
+  line-height: 1.02;
+}
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.data {
+  font-family: var(--font-mono);
+  font-variant-ligatures: none;
+}
+
+/* ---- schematic backdrop: hairline wiring grid, 4% opacity ---- */
+.schematic {
+  position: relative;
+  isolation: isolate;
+}
+.schematic::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: linear-gradient(
+      to right,
+      rgba(183, 238, 241, 0.075) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(183, 238, 241, 0.075) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+.schematic::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: linear-gradient(
+      to right,
+      rgba(183, 238, 241, 0.14) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(183, 238, 241, 0.14) 1px, transparent 1px);
+  background-size: 280px 280px;
+}
+
+/* ---- rules ---- */
+.hairline {
+  border-color: var(--rule);
+}
+
+/* ---- focus ---- */
+*:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 2px;
+}
+
+/* ---- scrollbar in filter rail ---- */
+.rail::-webkit-scrollbar {
+  width: 6px;
+}
+.rail::-webkit-scrollbar-thumb {
+  background: rgba(7, 143, 147, 0.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.caret::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 1.05em;
+  background: var(--coral);
+  margin-left: 3px;
+  vertical-align: -0.16em;
+  animation: blink 1.15s steps(2, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
