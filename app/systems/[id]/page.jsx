@@ -44,7 +44,7 @@ export default function SystemPage({ params }) {
 
   return (
     <>
-      <section className="schematic border-b border-navy/10 bg-navy text-white">
+      <section className="schematic border-b border-primary/10 bg-primary text-on-primary">
         <div className="mx-auto max-w-shell px-6 py-14">
           <nav className="mb-6">
             <Link href="/systems" className="text-[13px] text-tint/70 hover:text-tint">
@@ -53,17 +53,17 @@ export default function SystemPage({ params }) {
           </nav>
           <Eyebrow tone="light">Ship system</Eyebrow>
           <h1 className="h-display mt-3 text-[32px] leading-tight md:text-[44px]">{s.name}</h1>
-          <p className="mt-5 max-w-3xl text-[15px] leading-relaxed text-white/80">{BLURB[s.id]}</p>
+          <p className="mt-5 max-w-3xl text-[15px] leading-relaxed text-on-primary/80">{BLURB[s.id]}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href={`/catalog?group=${s.groups[0]}`}
-              className="bg-coral px-6 py-3 text-[14px] font-semibold text-navy hover:bg-coral/90"
+              className="bg-accent px-6 py-3 text-[14px] font-semibold text-on-accent hover:bg-accent/90"
             >
               Filter the catalogue
             </Link>
             <Link
               href="/quote"
-              className="border border-white/25 px-6 py-3 text-[14px] font-semibold text-white hover:border-tint hover:text-tint"
+              className="border border-on-primary/25 px-6 py-3 text-[14px] font-semibold text-on-primary hover:border-tint hover:text-tint"
             >
               Send a parts list
             </Link>
@@ -77,11 +77,11 @@ export default function SystemPage({ params }) {
       <div className="mx-auto max-w-shell px-6 py-14">
         {byGroup.map(({ group, items, total }) => (
           <section key={group.id} className="mb-16 last:mb-0">
-            <div className="flex flex-wrap items-end justify-between gap-4 border-b border-navy/10 pb-4">
-              <h2 className="h-display text-[23px] text-navy">{group.name}</h2>
+            <div className="flex flex-wrap items-end justify-between gap-4 border-b border-primary/10 pb-4">
+              <h2 className="h-display text-[23px] text-primary">{group.name}</h2>
               <Link
                 href={`/catalog?group=${group.id}`}
-                className="text-[13px] font-semibold text-tealink hover:underline"
+                className="text-[13px] font-semibold text-secondary-ink hover:underline"
               >
                 All {total} parts →
               </Link>

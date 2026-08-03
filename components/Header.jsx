@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useRfq } from "./RfqProvider";
+import ThemeSwitcher from "./ThemeSwitcher";
 import { COMPANY } from "@/lib/data";
 
 const NAV = [
@@ -18,9 +19,9 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-navy/10 bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-primary/10 bg-base/95 backdrop-blur">
       {/* utility strip */}
-      <div className="hidden bg-navy text-white lg:block">
+      <div className="hidden bg-primary text-on-primary lg:block">
         <div className="mx-auto flex max-w-shell items-center justify-between px-6 py-1.5">
           <p className="data text-[11px] text-tint/70">
             {COMPANY.city}, {COMPANY.country} · TRN {COMPANY.trn} · {COMPANY.hours}
@@ -41,8 +42,8 @@ export default function Header() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo.png" alt="" className="h-10 w-10 object-contain" />
           <span className="leading-none">
-            <span className="h-display block text-[19px] text-navy">CEYTOM</span>
-            <span className="eyebrow block text-tealink">Marine Electrical</span>
+            <span className="h-display block text-[19px] text-primary">CEYTOM</span>
+            <span className="eyebrow block text-secondary-ink">Marine Electrical</span>
           </span>
         </Link>
 
@@ -51,19 +52,21 @@ export default function Header() {
             <Link
               key={n.href}
               href={n.href}
-              className="text-[14px] font-medium text-slate/75 transition-colors hover:text-tealink"
+              className="text-[14px] font-medium text-ink/75 transition-colors hover:text-secondary-ink"
             >
               {n.label}
             </Link>
           ))}
         </nav>
 
+        <ThemeSwitcher className="ml-auto lg:ml-0" />
+
         <Link
           href="/quote"
-          className="ml-auto inline-flex items-center gap-2 bg-coral px-4 py-2.5 text-[13px] font-semibold text-navy transition-colors hover:bg-coral/90 lg:ml-0"
+          className="inline-flex items-center gap-2 bg-accent px-4 py-2.5 text-[13px] font-semibold text-on-accent transition-colors hover:bg-accent/90"
         >
           Request quote
-          <span className="data border-l border-navy/25 pl-2 text-[12px] tabular-nums">
+          <span className="data border-l border-primary/25 pl-2 text-[12px] tabular-nums">
             {count}
           </span>
         </Link>
@@ -75,20 +78,20 @@ export default function Header() {
           aria-label="Menu"
           className="lg:hidden"
         >
-          <span className="block h-px w-6 bg-navy" />
-          <span className="mt-1.5 block h-px w-6 bg-navy" />
-          <span className="mt-1.5 block h-px w-6 bg-navy" />
+          <span className="block h-px w-6 bg-primary" />
+          <span className="mt-1.5 block h-px w-6 bg-primary" />
+          <span className="mt-1.5 block h-px w-6 bg-primary" />
         </button>
       </div>
 
       {open && (
-        <nav className="border-t border-navy/10 bg-white px-6 py-3 lg:hidden">
+        <nav className="border-t border-primary/10 bg-base px-6 py-3 lg:hidden">
           {NAV.map((n) => (
             <Link
               key={n.href}
               href={n.href}
               onClick={() => setOpen(false)}
-              className="block border-b border-navy/8 py-3 text-[15px] font-medium text-slate/80 last:border-0"
+              className="block border-b border-primary/8 py-3 text-[15px] font-medium text-ink/80 last:border-0"
             >
               {n.label}
             </Link>

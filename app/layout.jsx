@@ -7,9 +7,11 @@ import "@fontsource/ibm-plex-mono/500.css";
 import "./globals.css";
 
 import { RfqProvider } from "@/components/RfqProvider";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { COMPANY } from "@/lib/data";
+import { DEFAULT_THEME, themeInitScript } from "@/lib/themes";
 
 export const metadata = {
   title: {
@@ -21,20 +23,28 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // suppressHydrationWarning: the pre-paint script rewrites data-theme to the
+  // saved palette, which by design differs from what the server sent.
   return (
-    <html lang="en">
+    <html lang="en" data-theme={DEFAULT_THEME} suppressHydrationWarning>
+      <head>
+        {/* swaps in the saved palette before first paint — no colour flash */}
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className="min-h-screen antialiased">
-        <RfqProvider>
-          <a
-            href="#main"
-            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:bg-coral focus:px-4 focus:py-2 focus:text-navy"
-          >
-            Skip to content
-          </a>
-          <Header />
-          <main id="main">{children}</main>
-          <Footer />
-        </RfqProvider>
+        <ThemeProvider>
+          <RfqProvider>
+            <a
+              href="#main"
+              className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:bg-accent focus:px-4 focus:py-2 focus:text-on-accent"
+            >
+              Skip to content
+            </a>
+            <Header />
+            <main id="main">{children}</main>
+            <Footer />
+          </RfqProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

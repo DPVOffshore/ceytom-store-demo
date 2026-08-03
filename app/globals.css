@@ -2,19 +2,133 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================
+   SEMANTIC COLOUR TOKENS
+   ------------------------------------------------------------
+   Values are space-separated RGB channels, NOT hex, so Tailwind's
+   opacity modifiers keep working through the variable:
+
+     tailwind.config.js:  primary: "rgb(var(--color-primary) / <alpha-value>)"
+     markup:              bg-primary  text-ink/70  border-primary/12
+
+   (A plain `var(--x): #hex` breaks every `/opacity` utility in
+   Tailwind v3 — it can't parse the value, so it drops the alpha.)
+
+   In hand-written CSS use rgb(var(--color-x)) or rgb(var(--color-x) / .22).
+
+   token                    tailwind key    role
+   ------------------------------------------------------------
+   --color-primary          primary         dark brand: nav band, headings, hairlines
+   --color-primary-soft     primary-soft    lighter dark: alt bands, dark buttons, badge text
+   --color-accent           accent          bright CTA fill
+   --color-accent-ink       accent-ink      accent as text/link on light (AA tuned)
+   --color-secondary        secondary       mid support tone: decorative rules, chip borders
+   --color-secondary-ink    secondary-ink   support tone as link/border/dot on light (AA tuned)
+   --color-surface          surface         light section + card background
+   --color-base             base            page background (lightest)
+   --color-tint             tint            lightest brand tint: muted text on dark, pale washes
+   --color-text             ink             body text
+   --color-text-on-primary  on-primary      text + rules on primary / primary-soft
+   --color-text-on-accent   on-accent       text on accent fills
+
+   The six tokens named in the brief are primary, accent, secondary,
+   surface, text and text-on-primary. The other six exist because the
+   site uses more roles than six: a second dark for banded sections, two
+   contrast-tuned "ink" tones for links on light backgrounds, a page
+   background distinct from section surfaces, a light tint for muted text
+   on dark, and a legible text colour for accent-filled buttons.
+   ============================================================ */
+
 :root {
   /* self-hosted via @fontsource — no build-time network fetch, no FOUT */
   --font-display: "Archivo Variable", "Archivo", system-ui, sans-serif;
   --font-body: "IBM Plex Sans", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
-  --navy: #012731;
-  --deep: #073d4a;
-  --teal: #078f93;
-  --coral: #eb6a4c;
-  --mist: #e9eef1;
-  --tint: #b7eef1;
-  --rule: rgba(7, 143, 147, 0.22);
+  /* ---- theme: Current (default) — the original Ceytom palette ---- */
+  --color-primary: 1 39 49; /* #012731 navy */
+  --color-primary-soft: 7 61 74; /* #073D4A deep */
+  --color-accent: 235 106 76; /* #EB6A4C coral */
+  --color-accent-ink: 201 74 46; /* #C94A2E coralink */
+  --color-secondary: 7 143 147; /* #078F93 teal */
+  --color-secondary-ink: 6 120 124; /* #06787C tealink */
+  --color-surface: 233 238 241; /* #E9EEF1 mist */
+  --color-base: 255 255 255; /* #FFFFFF */
+  --color-tint: 183 238 241; /* #B7EEF1 tint */
+  --color-text: 15 43 51; /* #0F2B33 slate */
+  --color-text-on-primary: 255 255 255; /* #FFFFFF */
+  --color-text-on-accent: 1 39 49; /* #012731 navy on coral */
+}
+
+/* ---- theme: Deep Harbour — trustworthy, nautical, premium ---- */
+[data-theme="deep-harbour"] {
+  --color-primary: 18 53 75; /* #12354B */
+  --color-primary-soft: 27 74 102; /* #1B4A66 */
+  --color-accent: 27 138 156; /* #1B8A9C */
+  --color-accent-ink: 138 106 60; /* #8A6A3C  bronze, from the sand secondary */
+  --color-secondary: 232 220 192; /* #E8DCC0 */
+  --color-secondary-ink: 20 112 126; /* #14707E  darkened accent — links need AA on light */
+  --color-surface: 244 246 247; /* #F4F6F7 */
+  --color-base: 255 255 255; /* #FFFFFF */
+  --color-tint: 232 220 192; /* #E8DCC0  the sand doubles as the light-on-dark tint */
+  --color-text: 18 53 75; /* #12354B */
+  --color-text-on-primary: 244 246 247; /* #F4F6F7 */
+  --color-text-on-accent: 7 34 43; /* #07222B */
+}
+
+/* ---- theme: Chandlery — industrial, bold, high-contrast ---- */
+[data-theme="chandlery"] {
+  --color-primary: 34 48 58; /* #22303A */
+  --color-primary-soft: 47 65 80; /* #2F4150 */
+  --color-accent: 255 107 74; /* #FF6B4A */
+  --color-accent-ink: 196 61 31; /* #C43D1F */
+  --color-secondary: 74 92 104; /* #4A5C68 */
+  --color-secondary-ink: 62 82 96; /* #3E5260 */
+  --color-surface: 244 241 234; /* #F4F1EA */
+  --color-base: 255 253 249; /* #FFFDF9 */
+  --color-tint: 217 210 196; /* #D9D2C4 */
+  --color-text: 34 48 58; /* #22303A */
+  --color-text-on-primary: 244 241 234; /* #F4F1EA */
+  --color-text-on-accent: 34 48 58; /* #22303A */
+}
+
+/* ---- theme: Tide & Teak — warm, approachable, marine-classic ---- */
+[data-theme="tide-and-teak"] {
+  --color-primary: 44 95 115; /* #2C5F73 */
+  --color-primary-soft: 47 101 122; /* #2F657A */
+  --color-accent: 233 161 59; /* #E9A13B */
+  --color-accent-ink: 143 88 16; /* #8F5810 */
+  --color-secondary: 143 184 196; /* #8FB8C4 */
+  --color-secondary-ink: 47 106 126; /* #2F6A7E */
+  --color-surface: 239 234 224; /* #EFEAE0 */
+  --color-base: 253 251 247; /* #FDFBF7 */
+  --color-tint: 228 240 244; /* #E4F0F4 */
+  --color-text: 35 52 59; /* #23343B  near-black neutral: #2C5F73 fails AA at text-ink/70 */
+  --color-text-on-primary: 239 234 224; /* #EFEAE0 */
+  --color-text-on-accent: 31 42 48; /* #1F2A30 */
+}
+
+/* ---- theme: Switchboard — monochrome panel, safety-yellow accent ---- */
+[data-theme="switchboard"] {
+  --color-primary: 0 0 0; /* #000000 */
+  --color-primary-soft: 43 43 43; /* #2B2B2B */
+  --color-accent: 255 201 30; /* #FFC91E */
+  --color-accent-ink: 128 96 0; /* #806000  the palette has one hue, so both */
+  --color-secondary: 87 87 87; /* #575757 */
+  --color-secondary-ink: 128 96 0; /* #806000  inks are the same dark amber */
+  --color-surface: 242 242 242; /* #F2F2F2  derived: bands need to read against white */
+  --color-base: 255 255 255; /* #FFFFFF */
+  --color-tint: 214 214 214; /* #D6D6D6  derived */
+  --color-text: 0 0 0; /* #000000 */
+  --color-text-on-primary: 255 255 255; /* #FFFFFF */
+  --color-text-on-accent: 0 0 0; /* #000000  black on safety yellow, 13.6:1 */
+}
+
+/* ---- cross-fade the palette when the switcher fires ---- */
+[data-theme-transition] * {
+  transition: background-color 0.25s ease, border-color 0.25s ease,
+    color 0.25s ease, fill 0.25s ease, stroke 0.25s ease,
+    outline-color 0.25s ease;
 }
 
 html {
@@ -22,8 +136,8 @@ html {
 }
 
 body {
-  background: #fff;
-  color: var(--navy);
+  background: rgb(var(--color-base));
+  color: rgb(var(--color-text));
   font-family: var(--font-body);
   font-feature-settings: "tnum" 1;
 }
@@ -59,10 +173,10 @@ body {
   z-index: -1;
   background-image: linear-gradient(
       to right,
-      rgba(183, 238, 241, 0.075) 1px,
+      rgb(var(--color-tint) / 0.075) 1px,
       transparent 1px
     ),
-    linear-gradient(to bottom, rgba(183, 238, 241, 0.075) 1px, transparent 1px);
+    linear-gradient(to bottom, rgb(var(--color-tint) / 0.075) 1px, transparent 1px);
   background-size: 56px 56px;
 }
 .schematic::after {
@@ -72,21 +186,21 @@ body {
   z-index: -1;
   background-image: linear-gradient(
       to right,
-      rgba(183, 238, 241, 0.14) 1px,
+      rgb(var(--color-tint) / 0.14) 1px,
       transparent 1px
     ),
-    linear-gradient(to bottom, rgba(183, 238, 241, 0.14) 1px, transparent 1px);
+    linear-gradient(to bottom, rgb(var(--color-tint) / 0.14) 1px, transparent 1px);
   background-size: 280px 280px;
 }
 
 /* ---- rules ---- */
 .hairline {
-  border-color: var(--rule);
+  border-color: rgb(var(--color-secondary) / 0.22);
 }
 
 /* ---- focus ---- */
 *:focus-visible {
-  outline: 2px solid var(--coral);
+  outline: 2px solid rgb(var(--color-accent));
   outline-offset: 2px;
 }
 
@@ -95,7 +209,7 @@ body {
   width: 6px;
 }
 .rail::-webkit-scrollbar-thumb {
-  background: rgba(7, 143, 147, 0.3);
+  background: rgb(var(--color-secondary) / 0.3);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -112,7 +226,7 @@ body {
   display: inline-block;
   width: 2px;
   height: 1.05em;
-  background: var(--coral);
+  background: rgb(var(--color-accent));
   margin-left: 3px;
   vertical-align: -0.16em;
   animation: blink 1.15s steps(2, start) infinite;

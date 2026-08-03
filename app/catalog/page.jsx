@@ -17,13 +17,13 @@ export default function CatalogPage({ searchParams }) {
 
   return (
     <>
-      <section className="schematic border-b border-navy/10 bg-navy text-white">
+      <section className="schematic border-b border-primary/10 bg-primary text-on-primary">
         <div className="mx-auto max-w-shell px-6 py-12">
           <Eyebrow tone="light">Catalogue</Eyebrow>
           <h1 className="h-display mt-3 text-[30px] md:text-[40px]">
             {products.length} part numbers
           </h1>
-          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-white/75">
+          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-on-primary/75">
             Filter by the specification that matters on a switchboard drawing — current rating,
             voltage, ingress protection, mounting hole diameter, plate size, pole configuration
             and certification. Prices are quoted, not listed.

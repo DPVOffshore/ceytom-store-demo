@@ -38,11 +38,11 @@ const CHANNELS = [
 export default function ContactPage() {
   return (
     <>
-      <section className="schematic border-b border-navy/10 bg-navy text-white">
+      <section className="schematic border-b border-primary/10 bg-primary text-on-primary">
         <div className="mx-auto max-w-shell px-6 py-14">
           <Eyebrow tone="light">Contact</Eyebrow>
           <h1 className="h-display mt-3 text-[30px] md:text-[42px]">Talk to the sales desk</h1>
-          <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-white/80">
+          <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-on-primary/80">
             If a vessel is waiting, call or message rather than email. We can usually confirm
             stock while you are on the line.
           </p>
@@ -52,29 +52,29 @@ export default function ContactPage() {
       <div className="mx-auto max-w-shell px-6 py-14">
         <div className="grid gap-4 sm:grid-cols-2">
           {CHANNELS.map((c) => (
-            <div key={c.label} className="border border-navy/12 bg-white p-6">
-              <p className="eyebrow text-tealink">{c.label}</p>
+            <div key={c.label} className="border border-primary/12 bg-base p-6">
+              <p className="eyebrow text-secondary-ink">{c.label}</p>
               {c.href ? (
                 <a
                   href={c.href}
-                  className="data mt-3 block text-[16px] font-medium text-navy hover:text-tealink"
+                  className="data mt-3 block text-[16px] font-medium text-primary hover:text-secondary-ink"
                 >
                   {c.detail}
                 </a>
               ) : (
-                <p className="mt-3 text-[15px] leading-relaxed text-navy">{c.detail}</p>
+                <p className="mt-3 text-[15px] leading-relaxed text-primary">{c.detail}</p>
               )}
-              <p className="mt-3 text-[13px] leading-relaxed text-slate/70">{c.note}</p>
+              <p className="mt-3 text-[13px] leading-relaxed text-ink/70">{c.note}</p>
             </div>
           ))}
         </div>
 
         <div className="mt-10 grid gap-4 lg:grid-cols-[1.4fr_1fr]">
-          <div className="border border-navy/12 bg-mist p-8">
-            <h2 className="h-display text-[21px] text-navy">
+          <div className="border border-primary/12 bg-surface p-8">
+            <h2 className="h-display text-[21px] text-primary">
               What to include when you enquire
             </h2>
-            <p className="mt-3 text-[14px] leading-relaxed text-slate/70">
+            <p className="mt-3 text-[14px] leading-relaxed text-ink/70">
               The more of this you can give us, the faster and firmer the quotation:
             </p>
             <ul className="mt-5 space-y-2.5">
@@ -86,23 +86,23 @@ export default function ContactPage() {
                 "Required-by date, and whether the vessel is sailing",
                 "Whether class-approved equivalents are mandatory",
               ].map((t) => (
-                <li key={t} className="flex gap-3 text-[14px] leading-relaxed text-slate/75">
-                  <span className="mt-2 h-1 w-1 shrink-0 bg-coral" />
+                <li key={t} className="flex gap-3 text-[14px] leading-relaxed text-ink/75">
+                  <span className="mt-2 h-1 w-1 shrink-0 bg-accent" />
                   {t}
                 </li>
               ))}
             </ul>
             <Link
               href="/quote"
-              className="mt-7 inline-block bg-coral px-6 py-3 text-[14px] font-semibold text-navy hover:bg-coral/90"
+              className="mt-7 inline-block bg-accent px-6 py-3 text-[14px] font-semibold text-on-accent hover:bg-accent/90"
             >
               Use the quote form instead
             </Link>
           </div>
 
-          <div className="flex min-h-[280px] flex-col justify-between border border-navy/12 bg-white p-8">
+          <div className="flex min-h-[280px] flex-col justify-between border border-primary/12 bg-base p-8">
             <div>
-              <p className="eyebrow text-slate/70">Registered details</p>
+              <p className="eyebrow text-ink/70">Registered details</p>
               <dl className="mt-4 space-y-3">
                 {[
                   ["Legal name", COMPANY.legalName],
@@ -111,13 +111,13 @@ export default function ContactPage() {
                   ["Hours", COMPANY.hours],
                 ].map(([k, v]) => (
                   <div key={k}>
-                    <dt className="text-[12px] text-slate/70">{k}</dt>
-                    <dd className="data text-[13px] text-navy">{v}</dd>
+                    <dt className="text-[12px] text-ink/70">{k}</dt>
+                    <dd className="data text-[13px] text-primary">{v}</dd>
                   </div>
                 ))}
               </dl>
             </div>
-            <p className="mt-6 border-t border-navy/10 pt-4 text-[12px] leading-relaxed text-slate/70">
+            <p className="mt-6 border-t border-primary/10 pt-4 text-[12px] leading-relaxed text-ink/70">
               A location map is embedded here in the production build.
             </p>
           </div>

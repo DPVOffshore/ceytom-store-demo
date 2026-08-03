@@ -73,15 +73,15 @@ export default function PartSearch({ index, size = "hero" }) {
   return (
     <div ref={box} className="relative">
       <div
-        className={`flex items-center border bg-white/[0.04] ${
+        className={`flex items-center border bg-on-primary/[0.04] ${
           hero
-            ? "border-tint/25 focus-within:border-teal"
-            : "border-navy/15 bg-white focus-within:border-teal"
+            ? "border-tint/25 focus-within:border-secondary-ink"
+            : "border-primary/15 bg-base focus-within:border-secondary-ink"
         }`}
       >
         <span
           className={`eyebrow shrink-0 border-r px-4 ${
-            hero ? "border-tint/20 text-tint/70" : "border-navy/10 text-tealink"
+            hero ? "border-tint/20 text-tint/70" : "border-primary/10 text-secondary-ink"
           } ${hero ? "py-5" : "py-3"}`}
         >
           Part no.
@@ -98,14 +98,14 @@ export default function PartSearch({ index, size = "hero" }) {
           aria-label="Search by part number"
           className={`data w-full bg-transparent placeholder:text-current/30 focus:outline-none ${
             hero
-              ? "px-5 py-5 text-[17px] text-white placeholder:text-tint/70 md:text-[19px]"
-              : "px-4 py-3 text-[14px] text-navy placeholder:text-slate/70"
+              ? "px-5 py-5 text-[17px] text-on-primary placeholder:text-tint/70 md:text-[19px]"
+              : "px-4 py-3 text-[14px] text-primary placeholder:text-ink/70"
           }`}
         />
         <button
           type="button"
           onClick={() => q.trim() && router.push(`/catalog?q=${encodeURIComponent(q.trim())}`)}
-          className={`shrink-0 bg-coral font-semibold text-navy transition-colors hover:bg-coral/90 ${
+          className={`shrink-0 bg-accent font-semibold text-on-accent transition-colors hover:bg-accent/90 ${
             hero ? "px-7 py-5 text-[14px]" : "px-5 py-3 text-[13px]"
           }`}
         >
@@ -114,20 +114,20 @@ export default function PartSearch({ index, size = "hero" }) {
       </div>
 
       {open && q.trim() && (
-        <div className="absolute left-0 right-0 top-full z-30 mt-1 border border-navy/12 bg-white shadow-xl">
+        <div className="absolute left-0 right-0 top-full z-30 mt-1 border border-primary/12 bg-base shadow-xl">
           {hits.length === 0 ? (
             <div className="px-5 py-5">
-              <p className="text-[14px] text-slate/70">
-                No part matches <span className="data text-navy">{q}</span>.
+              <p className="text-[14px] text-ink/70">
+                No part matches <span className="data text-primary">{q}</span>.
               </p>
-              <p className="mt-1.5 text-[13px] text-slate/70">
+              <p className="mt-1.5 text-[13px] text-ink/70">
                 We source beyond the listed catalogue — send it to us as a quote request and
                 we&apos;ll confirm availability.
               </p>
               <button
                 type="button"
                 onClick={() => router.push(`/quote?add=${encodeURIComponent(q.trim())}`)}
-                className="mt-3 text-[13px] font-semibold text-coralink hover:underline"
+                className="mt-3 text-[13px] font-semibold text-accent-ink hover:underline"
               >
                 Request this part →
               </button>
@@ -140,17 +140,17 @@ export default function PartSearch({ index, size = "hero" }) {
                     type="button"
                     onMouseEnter={() => setActive(i)}
                     onClick={() => go(h)}
-                    className={`flex w-full items-center gap-4 border-b border-navy/6 px-4 py-3 text-left last:border-0 ${
-                      i === active ? "bg-tint/25" : "bg-white"
+                    className={`flex w-full items-center gap-4 border-b border-primary/6 px-4 py-3 text-left last:border-0 ${
+                      i === active ? "bg-tint/25" : "bg-base"
                     }`}
                   >
-                    <span className="data w-32 shrink-0 text-[13px] font-medium text-tealink">
+                    <span className="data w-32 shrink-0 text-[13px] font-medium text-secondary-ink">
                       {h.p}
                     </span>
-                    <span className="min-w-0 flex-1 truncate text-[13px] text-slate/80">
+                    <span className="min-w-0 flex-1 truncate text-[13px] text-ink/80">
                       {h.n}
                     </span>
-                    <span className="eyebrow hidden shrink-0 text-slate/70 md:block">
+                    <span className="eyebrow hidden shrink-0 text-ink/70 md:block">
                       {h.c}
                     </span>
                   </button>
@@ -160,7 +160,7 @@ export default function PartSearch({ index, size = "hero" }) {
                 <button
                   type="button"
                   onClick={() => router.push(`/catalog?q=${encodeURIComponent(q.trim())}`)}
-                  className="w-full bg-mist px-4 py-2.5 text-left text-[12px] font-semibold text-deep hover:bg-tint/40"
+                  className="w-full bg-surface px-4 py-2.5 text-left text-[12px] font-semibold text-primary-soft hover:bg-tint/40"
                 >
                   See all matches for “{q.trim()}” →
                 </button>

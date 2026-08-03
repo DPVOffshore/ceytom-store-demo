@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <>
       {/* ─────────── HERO: the search field is the thesis ─────────── */}
-      <section className="schematic bg-navy text-white">
+      <section className="schematic bg-primary text-on-primary">
         <div className="mx-auto max-w-shell px-6 py-20 md:py-28">
           <div className="mx-auto max-w-3xl text-center">
             <Eyebrow tone="light">
@@ -36,7 +36,7 @@ export default function Home() {
               <br />
               <span className="text-tint">number</span>, not its name.
             </h1>
-            <p className="mx-auto mt-6 max-w-xl text-[15px] leading-relaxed text-white/80 md:text-[16px]">
+            <p className="mx-auto mt-6 max-w-xl text-[15px] leading-relaxed text-on-primary/80 md:text-[16px]">
               Marine electrical switchgear, control and signalling components for
               commercial vessels. {products.length} part numbers, {inStock} in Dubai stock,
               delivered to vessel or berth.
@@ -53,7 +53,7 @@ export default function Home() {
             <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
               <span className="eyebrow text-tint/70">Quote in {COMPANY.responseTime}</span>
               <span className="h-3 w-px bg-tint/20" />
-              <Link href="/quote" className="text-[14px] font-semibold text-coral hover:underline">
+              <Link href="/quote" className="text-[14px] font-semibold text-accent hover:underline">
                 Upload a parts list →
               </Link>
             </div>
@@ -65,7 +65,7 @@ export default function Home() {
           <div className="mx-auto flex max-w-shell flex-wrap items-center justify-center gap-x-10 gap-y-3 px-6 py-5">
             <span className="eyebrow text-tint/70">Certified to</span>
             {CERT_STRIP.map((c) => (
-              <span key={c} className="data text-[13px] font-medium tracking-wide text-white/75">
+              <span key={c} className="data text-[13px] font-medium tracking-wide text-on-primary/75">
                 {c}
               </span>
             ))}
@@ -74,8 +74,8 @@ export default function Home() {
       </section>
 
       {/* ─────────── KEY FIGURES ─────────── */}
-      <section className="border-b border-navy/10">
-        <div className="mx-auto grid max-w-shell grid-cols-2 divide-x divide-navy/10 px-6 lg:grid-cols-4">
+      <section className="border-b border-primary/10">
+        <div className="mx-auto grid max-w-shell grid-cols-2 divide-x divide-primary/10 px-6 lg:grid-cols-4">
           {[
             [products.length, "part numbers listed"],
             [categories.length, "product families"],
@@ -83,8 +83,8 @@ export default function Home() {
             ["4", "Dubai & Fujairah ports served"],
           ].map(([n, l]) => (
             <div key={l} className="px-4 py-8 first:pl-0 lg:px-8">
-              <p className="h-display data text-[30px] text-teal md:text-[38px]">{n}</p>
-              <p className="mt-1 text-[13px] leading-snug text-slate/70">{l}</p>
+              <p className="h-display data text-[30px] text-secondary-ink md:text-[38px]">{n}</p>
+              <p className="mt-1 text-[13px] leading-snug text-ink/70">{l}</p>
             </div>
           ))}
         </div>
@@ -95,23 +95,23 @@ export default function Home() {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <Eyebrow>Catalogue</Eyebrow>
-            <h2 className="h-display mt-3 text-[28px] text-navy md:text-[34px]">
+            <h2 className="h-display mt-3 text-[28px] text-primary md:text-[34px]">
               Browse by component family
             </h2>
           </div>
-          <Link href="/catalog" className="text-[14px] font-semibold text-tealink hover:underline">
+          <Link href="/catalog" className="text-[14px] font-semibold text-secondary-ink hover:underline">
             View full catalogue →
           </Link>
         </div>
 
-        <div className="mt-10 grid gap-px border border-navy/10 bg-navy/10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-px border border-primary/10 bg-primary/10 sm:grid-cols-2 lg:grid-cols-4">
           {groups.map((g) => {
             const sample = products.find((p) => p.group === g.id && p.image);
             return (
               <Link
                 key={g.id}
                 href={`/catalog?group=${g.id}`}
-                className="group flex flex-col justify-between bg-white p-6 transition-colors hover:bg-mist"
+                className="group flex flex-col justify-between bg-base p-6 transition-colors hover:bg-surface"
               >
                 <div className="flex h-24 items-center justify-center">
                   {sample?.image && (
@@ -125,10 +125,10 @@ export default function Home() {
                   )}
                 </div>
                 <div className="mt-6">
-                  <h3 className="h-display text-[17px] leading-tight text-navy group-hover:text-tealink">
+                  <h3 className="h-display text-[17px] leading-tight text-primary group-hover:text-secondary-ink">
                     {g.name}
                   </h3>
-                  <p className="data mt-2 text-[12px] text-slate/70">{g.count} parts</p>
+                  <p className="data mt-2 text-[12px] text-ink/70">{g.count} parts</p>
                 </div>
               </Link>
             );
@@ -137,14 +137,14 @@ export default function Home() {
       </section>
 
       {/* ─────────── BROWSE BY SHIP SYSTEM ─────────── */}
-      <section className="bg-mist">
+      <section className="bg-surface">
         <div className="mx-auto max-w-shell px-6 py-20">
           <div className="max-w-2xl">
             <Eyebrow>Where it fits</Eyebrow>
-            <h2 className="h-display mt-3 text-[28px] text-navy md:text-[34px]">
+            <h2 className="h-display mt-3 text-[28px] text-primary md:text-[34px]">
               Browse by shipboard system
             </h2>
-            <p className="mt-4 text-[15px] leading-relaxed text-slate/70">
+            <p className="mt-4 text-[15px] leading-relaxed text-ink/70">
               Superintendents and chief engineers specify by location on the vessel.
               These groupings map the catalogue to the spaces you are actually working in.
             </p>
@@ -157,15 +157,15 @@ export default function Home() {
                 <Link
                   key={s.id}
                   href={`/systems/${s.id}`}
-                  className="group border border-navy/12 bg-white p-6 transition-colors hover:border-teal"
+                  className="group border border-primary/12 bg-base p-6 transition-colors hover:border-secondary-ink"
                 >
                   <div className="flex items-start justify-between gap-4">
-                    <h3 className="h-display text-[18px] leading-tight text-navy group-hover:text-tealink">
+                    <h3 className="h-display text-[18px] leading-tight text-primary group-hover:text-secondary-ink">
                       {s.name}
                     </h3>
-                    <span className="data shrink-0 text-[12px] text-slate/70">{count}</span>
+                    <span className="data shrink-0 text-[12px] text-ink/70">{count}</span>
                   </div>
-                  <p className="mt-3 text-[13px] leading-relaxed text-slate/70">
+                  <p className="mt-3 text-[13px] leading-relaxed text-ink/70">
                     {s.groups
                       .map((g) => groups.find((x) => x.id === g)?.name)
                       .filter(Boolean)
@@ -183,11 +183,11 @@ export default function Home() {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <Eyebrow>Frequently requested</Eyebrow>
-            <h2 className="h-display mt-3 text-[28px] text-navy md:text-[34px]">
+            <h2 className="h-display mt-3 text-[28px] text-primary md:text-[34px]">
               Common bridge &amp; engine-room spares
             </h2>
           </div>
-          <Link href="/catalog" className="text-[14px] font-semibold text-tealink hover:underline">
+          <Link href="/catalog" className="text-[14px] font-semibold text-secondary-ink hover:underline">
             All {products.length} parts →
           </Link>
         </div>
@@ -199,31 +199,31 @@ export default function Home() {
       </section>
 
       {/* ─────────── HOW QUOTING WORKS — a real sequence, so numbered ─────────── */}
-      <section className="schematic bg-deep text-white">
+      <section className="schematic bg-primary-soft text-on-primary">
         <div className="mx-auto max-w-shell px-6 py-20">
           <div className="max-w-2xl">
             <Eyebrow tone="light">How it works</Eyebrow>
             <h2 className="h-display mt-3 text-[28px] md:text-[34px]">
               We quote rather than list prices
             </h2>
-            <p className="mt-4 text-[15px] leading-relaxed text-white/80">
+            <p className="mt-4 text-[15px] leading-relaxed text-on-primary/80">
               Marine procurement runs on negotiated, volume-based terms. Build a request,
               send it, and our team responds with a formal quotation including lead time,
               freight and applicable VAT.
             </p>
           </div>
 
-          <ol className="mt-12 grid gap-px bg-white/12 md:grid-cols-4">
+          <ol className="mt-12 grid gap-px bg-on-primary/12 md:grid-cols-4">
             {[
               ["Find the parts", "Search by part number, or paste a list of up to 100 lines."],
               ["Build the request", "Add lines with quantities. No account needed."],
               ["Send it", "Add your vessel, delivery port and required-by date."],
               ["Receive a quotation", `A formal quote within ${COMPANY.responseTime}.`],
             ].map(([t, d], i) => (
-              <li key={t} className="bg-deep p-6">
+              <li key={t} className="bg-primary-soft p-6">
                 <span className="data text-[12px] text-tint">{String(i + 1).padStart(2, "0")}</span>
                 <h3 className="h-display mt-3 text-[17px]">{t}</h3>
-                <p className="mt-2 text-[13px] leading-relaxed text-white/75">{d}</p>
+                <p className="mt-2 text-[13px] leading-relaxed text-on-primary/75">{d}</p>
               </li>
             ))}
           </ol>
@@ -231,13 +231,13 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
               href="/quote"
-              className="bg-coral px-6 py-3 text-[14px] font-semibold text-navy transition-colors hover:bg-coral/90"
+              className="bg-accent px-6 py-3 text-[14px] font-semibold text-on-accent transition-colors hover:bg-accent/90"
             >
               Start a quote request
             </Link>
             <Link
               href="/catalog"
-              className="border border-white/25 px-6 py-3 text-[14px] font-semibold text-white transition-colors hover:border-tint hover:text-tint"
+              className="border border-on-primary/25 px-6 py-3 text-[14px] font-semibold text-on-primary transition-colors hover:border-tint hover:text-tint"
             >
               Browse the catalogue
             </Link>
@@ -250,23 +250,23 @@ export default function Home() {
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr]">
           <div>
             <Eyebrow>Supplier credentials</Eyebrow>
-            <h2 className="h-display mt-3 text-[28px] text-navy md:text-[34px]">
+            <h2 className="h-display mt-3 text-[28px] text-primary md:text-[34px]">
               Verifiable, on every page
             </h2>
-            <p className="mt-4 text-[15px] leading-relaxed text-slate/70">
+            <p className="mt-4 text-[15px] leading-relaxed text-ink/70">
               Procurement teams need to confirm who they are buying from before they raise a
               purchase order. Our licence, tax registration and physical premises are published,
               not buried.
             </p>
             <Link
               href="/about"
-              className="mt-6 inline-block text-[14px] font-semibold text-tealink hover:underline"
+              className="mt-6 inline-block text-[14px] font-semibold text-secondary-ink hover:underline"
             >
               Company details →
             </Link>
           </div>
 
-          <dl className="grid gap-px border border-navy/10 bg-navy/10 sm:grid-cols-2">
+          <dl className="grid gap-px border border-primary/10 bg-primary/10 sm:grid-cols-2">
             {[
               ["Registered name", COMPANY.legalName],
               ["Trade licence", COMPANY.licence],
@@ -275,9 +275,9 @@ export default function Home() {
               ["Business hours", COMPANY.hours],
               ["Delivery to vessel", COMPANY.ports.join(", ")],
             ].map(([k, v]) => (
-              <div key={k} className="bg-white p-5">
-                <dt className="eyebrow text-slate/70">{k}</dt>
-                <dd className="data mt-2 text-[13px] leading-relaxed text-navy">{v}</dd>
+              <div key={k} className="bg-base p-5">
+                <dt className="eyebrow text-ink/70">{k}</dt>
+                <dd className="data mt-2 text-[13px] leading-relaxed text-primary">{v}</dd>
               </div>
             ))}
           </dl>

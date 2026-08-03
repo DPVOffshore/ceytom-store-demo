@@ -3,17 +3,29 @@ module.exports = {
   content: ["./app/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
   theme: {
     extend: {
+      // Every colour resolves through a CSS custom property defined in
+      // app/globals.css, so swapping [data-theme] on <html> recolours the
+      // whole site. The <alpha-value> placeholder is what keeps opacity
+      // modifiers (bg-primary/10, text-ink/70) working.
       colors: {
-        // sampled directly from the Ceytom mark
-        navy: "#012731",
-        deep: "#073D4A",
-        teal: "#078F93",
-        coral: "#EB6A4C",      /* logo coral — backgrounds, paired with navy text */
-        coralink: "#C94A2E",   /* coral text on light backgrounds (4.66:1) */
-        tealink: "#06787C",    /* teal small text on light backgrounds (4.5:1) */
-        mist: "#E9EEF1",
-        tint: "#B7EEF1",
-        slate: "#0F2B33",
+        primary: {
+          DEFAULT: "rgb(var(--color-primary) / <alpha-value>)",
+          soft: "rgb(var(--color-primary-soft) / <alpha-value>)",
+        },
+        accent: {
+          DEFAULT: "rgb(var(--color-accent) / <alpha-value>)",
+          ink: "rgb(var(--color-accent-ink) / <alpha-value>)",
+        },
+        secondary: {
+          DEFAULT: "rgb(var(--color-secondary) / <alpha-value>)",
+          ink: "rgb(var(--color-secondary-ink) / <alpha-value>)",
+        },
+        surface: "rgb(var(--color-surface) / <alpha-value>)",
+        base: "rgb(var(--color-base) / <alpha-value>)",
+        tint: "rgb(var(--color-tint) / <alpha-value>)",
+        ink: "rgb(var(--color-text) / <alpha-value>)",
+        "on-primary": "rgb(var(--color-text-on-primary) / <alpha-value>)",
+        "on-accent": "rgb(var(--color-text-on-accent) / <alpha-value>)",
       },
       fontFamily: {
         display: ["Archivo Variable", "Archivo", "system-ui", "sans-serif"],

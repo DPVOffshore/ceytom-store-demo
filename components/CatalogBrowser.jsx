@@ -45,16 +45,16 @@ function uniq(list, key) {
 function FilterGroup({ title, children, defaultOpen = true, count }) {
   const [open, setOpen] = useState(defaultOpen);
   return (
-    <div className="border-b border-navy/10 py-4">
+    <div className="border-b border-primary/10 py-4">
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         className="flex w-full items-center justify-between gap-2 text-left"
       >
-        <span className="eyebrow text-slate/70">{title}</span>
-        <span className="data flex items-center gap-2 text-[11px] text-slate/70">
-          {count ? <span className="text-coral">{count}</span> : null}
+        <span className="eyebrow text-ink/70">{title}</span>
+        <span className="data flex items-center gap-2 text-[11px] text-ink/70">
+          {count ? <span className="text-accent">{count}</span> : null}
           <span>{open ? "−" : "+"}</span>
         </span>
       </button>
@@ -65,15 +65,15 @@ function FilterGroup({ title, children, defaultOpen = true, count }) {
 
 function Check({ label, checked, onChange, hint }) {
   return (
-    <label className="flex cursor-pointer items-center gap-2.5 text-[13px] text-slate/75 hover:text-navy">
+    <label className="flex cursor-pointer items-center gap-2.5 text-[13px] text-ink/75 hover:text-primary">
       <input
         type="checkbox"
         checked={checked}
         onChange={onChange}
-        className="h-3.5 w-3.5 shrink-0 accent-teal"
+        className="h-3.5 w-3.5 shrink-0 accent-secondary-ink"
       />
       <span className="flex-1 leading-snug">{label}</span>
-      {hint != null && <span className="data text-[11px] text-slate/70">{hint}</span>}
+      {hint != null && <span className="data text-[11px] text-ink/70">{hint}</span>}
     </label>
   );
 }
@@ -199,13 +199,13 @@ export default function CatalogBrowser({ products, groups, initial }) {
 
   const rail = (
     <div className="rail max-h-none overflow-visible lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:pr-3">
-      <div className="flex items-center justify-between border-b border-navy/10 pb-3">
+      <div className="flex items-center justify-between border-b border-primary/10 pb-3">
         <Eyebrow>Filter</Eyebrow>
         {activeCount > 0 && (
           <button
             type="button"
             onClick={clearAll}
-            className="text-[12px] font-semibold text-coralink hover:underline"
+            className="text-[12px] font-semibold text-accent-ink hover:underline"
           >
             Clear {activeCount}
           </button>
@@ -339,20 +339,20 @@ export default function CatalogBrowser({ products, groups, initial }) {
         <div>
           {/* search + sort bar */}
           <div className="flex flex-wrap items-center gap-3">
-            <div className="flex min-w-[240px] flex-1 items-center border border-navy/15 bg-white focus-within:border-teal">
-              <span className="eyebrow border-r border-navy/10 px-3 py-3 text-tealink">Part no.</span>
+            <div className="flex min-w-[240px] flex-1 items-center border border-primary/15 bg-base focus-within:border-secondary-ink">
+              <span className="eyebrow border-r border-primary/10 px-3 py-3 text-secondary-ink">Part no.</span>
               <input
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
                 placeholder="Search part number or description"
                 aria-label="Search catalogue"
-                className="data w-full bg-transparent px-4 py-3 text-[14px] text-navy placeholder:text-slate/70 focus:outline-none"
+                className="data w-full bg-transparent px-4 py-3 text-[14px] text-primary placeholder:text-ink/70 focus:outline-none"
               />
               {q && (
                 <button
                   type="button"
                   onClick={() => setQ("")}
-                  className="px-3 text-[13px] text-slate/70 hover:text-coralink"
+                  className="px-3 text-[13px] text-ink/70 hover:text-accent-ink"
                   aria-label="Clear search"
                 >
                   ✕
@@ -363,17 +363,17 @@ export default function CatalogBrowser({ products, groups, initial }) {
             <button
               type="button"
               onClick={() => setShowFilters((s) => !s)}
-              className="border border-navy/15 px-4 py-3 text-[13px] font-semibold text-navy lg:hidden"
+              className="border border-primary/15 px-4 py-3 text-[13px] font-semibold text-primary lg:hidden"
             >
-              Filter {activeCount > 0 && <span className="text-coral">({activeCount})</span>}
+              Filter {activeCount > 0 && <span className="text-accent">({activeCount})</span>}
             </button>
 
-            <label className="flex items-center gap-2 text-[13px] text-slate/70">
+            <label className="flex items-center gap-2 text-[13px] text-ink/70">
               <span className="hidden sm:inline">Sort</span>
               <select
                 value={sort}
                 onChange={(e) => setSort(e.target.value)}
-                className="border border-navy/15 bg-white px-3 py-3 text-[13px] text-navy focus:border-teal focus:outline-none"
+                className="border border-primary/15 bg-base px-3 py-3 text-[13px] text-primary focus:border-secondary-ink focus:outline-none"
               >
                 <option value="relevance">Relevance</option>
                 <option value="part">Part number</option>
@@ -383,19 +383,19 @@ export default function CatalogBrowser({ products, groups, initial }) {
             </label>
           </div>
 
-          <p className="data mt-4 text-[12px] text-slate/70">
+          <p className="data mt-4 text-[12px] text-ink/70">
             {results.length} of {products.length} parts
             {activeCount > 0 ? ` · ${activeCount} filter${activeCount > 1 ? "s" : ""} applied` : ""}
           </p>
 
           {showFilters && (
-            <div className="mt-4 border border-navy/12 bg-white p-5 lg:hidden">{rail}</div>
+            <div className="mt-4 border border-primary/12 bg-base p-5 lg:hidden">{rail}</div>
           )}
 
           {results.length === 0 ? (
-            <div className="mt-10 border border-navy/12 bg-mist p-10 text-center">
-              <p className="h-display text-[19px] text-navy">No parts match those filters</p>
-              <p className="mx-auto mt-2 max-w-md text-[14px] leading-relaxed text-slate/75">
+            <div className="mt-10 border border-primary/12 bg-surface p-10 text-center">
+              <p className="h-display text-[19px] text-primary">No parts match those filters</p>
+              <p className="mx-auto mt-2 max-w-md text-[14px] leading-relaxed text-ink/75">
                 We source outside the listed catalogue. Send the part numbers you need as a quote
                 request and we will confirm availability and lead time.
               </p>
@@ -403,13 +403,13 @@ export default function CatalogBrowser({ products, groups, initial }) {
                 <button
                   type="button"
                   onClick={clearAll}
-                  className="border border-navy/20 px-5 py-2.5 text-[13px] font-semibold text-navy hover:border-teal hover:text-tealink"
+                  className="border border-primary/20 px-5 py-2.5 text-[13px] font-semibold text-primary hover:border-secondary-ink hover:text-secondary-ink"
                 >
                   Clear filters
                 </button>
                 <a
                   href="/quote"
-                  className="bg-coral px-5 py-2.5 text-[13px] font-semibold text-navy hover:bg-coral/90"
+                  className="bg-accent px-5 py-2.5 text-[13px] font-semibold text-on-accent hover:bg-accent/90"
                 >
                   Request a part
                 </a>
@@ -427,7 +427,7 @@ export default function CatalogBrowser({ products, groups, initial }) {
                   <button
                     type="button"
                     onClick={() => setLimit((l) => l + 36)}
-                    className="border border-navy/20 px-7 py-3 text-[14px] font-semibold text-navy transition-colors hover:border-teal hover:text-tealink"
+                    className="border border-primary/20 px-7 py-3 text-[14px] font-semibold text-primary transition-colors hover:border-secondary-ink hover:text-secondary-ink"
                   >
                     Show more · {results.length - limit} remaining
                   </button>

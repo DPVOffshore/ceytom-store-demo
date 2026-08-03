@@ -14,7 +14,7 @@ export function AddToQuote({ product, qty = 1, block = false, label = "Add to qu
         e.stopPropagation();
         add(product, qty);
       }}
-      className={`border border-coral bg-coral px-4 py-2 text-[13px] font-semibold text-navy transition-colors hover:bg-white hover:text-coralink ${
+      className={`border border-accent bg-accent px-4 py-2 text-[13px] font-semibold text-on-accent transition-colors hover:bg-base hover:text-accent-ink ${
         block ? "w-full" : ""
       }`}
     >
@@ -32,9 +32,9 @@ export default function ProductCard({ product: p }) {
   if (p.poles?.length) specs.push(["", p.poles[p.poles.length - 1]]);
 
   return (
-    <article className="group flex flex-col border border-navy/10 bg-white transition-colors hover:border-teal/50">
+    <article className="group flex flex-col border border-primary/10 bg-base transition-colors hover:border-secondary-ink/50">
       <Link href={`/product/${p.id}`} className="block">
-        <div className="flex aspect-[4/3] items-center justify-center overflow-hidden bg-white p-4">
+        <div className="flex aspect-[4/3] items-center justify-center overflow-hidden bg-base p-4">
           {p.image ? (
             /* eslint-disable-next-line @next/next/no-img-element */
             <img
@@ -44,19 +44,19 @@ export default function ProductCard({ product: p }) {
               className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.04]"
             />
           ) : (
-            <span className="eyebrow text-slate/70">No image</span>
+            <span className="eyebrow text-ink/70">No image</span>
           )}
         </div>
       </Link>
 
-      <div className="flex flex-1 flex-col border-t border-navy/10 p-4">
+      <div className="flex flex-1 flex-col border-t border-primary/10 p-4">
         <PartNumber value={p.partNumber} size="xs" className="self-start" />
         <Link href={`/product/${p.id}`} className="mt-2.5 block">
-          <h3 className="text-[14px] font-semibold leading-snug text-navy group-hover:text-tealink">
+          <h3 className="text-[14px] font-semibold leading-snug text-primary group-hover:text-secondary-ink">
             {p.name}
           </h3>
         </Link>
-        <p className="mt-1 text-[12px] text-slate/70">
+        <p className="mt-1 text-[12px] text-ink/70">
           {p.brand}
           {p.origin ? ` · ${p.origin}` : ""}
         </p>
@@ -71,7 +71,7 @@ export default function ProductCard({ product: p }) {
           </div>
         )}
 
-        <div className="mt-4 flex items-center justify-between gap-3 border-t border-navy/8 pt-3">
+        <div className="mt-4 flex items-center justify-between gap-3 border-t border-primary/8 pt-3">
           <Stock value={p.stock} />
           <AddToQuote product={p} label="Add" />
         </div>

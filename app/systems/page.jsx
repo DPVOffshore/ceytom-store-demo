@@ -11,11 +11,11 @@ export const metadata = {
 export default function SystemsPage() {
   return (
     <>
-      <section className="schematic border-b border-navy/10 bg-navy text-white">
+      <section className="schematic border-b border-primary/10 bg-primary text-on-primary">
         <div className="mx-auto max-w-shell px-6 py-12">
           <Eyebrow tone="light">Where it fits</Eyebrow>
           <h1 className="h-display mt-3 text-[30px] md:text-[40px]">Browse by ship system</h1>
-          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-white/75">
+          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-on-primary/75">
             Chief engineers and superintendents specify by location on the vessel, not by
             component taxonomy. These groupings follow the spaces you work in.
           </p>
@@ -31,9 +31,9 @@ export default function SystemsPage() {
               <Link
                 key={s.id}
                 href={`/systems/${s.id}`}
-                className="group flex flex-col border border-navy/12 bg-white transition-colors hover:border-teal"
+                className="group flex flex-col border border-primary/12 bg-base transition-colors hover:border-secondary-ink"
               >
-                <div className="flex h-32 items-center justify-center border-b border-navy/10 p-4">
+                <div className="flex h-32 items-center justify-center border-b border-primary/10 p-4">
                   {sample?.image && (
                     /* eslint-disable-next-line @next/next/no-img-element */
                     <img
@@ -45,16 +45,16 @@ export default function SystemsPage() {
                   )}
                 </div>
                 <div className="flex flex-1 flex-col p-6">
-                  <h2 className="h-display text-[19px] leading-tight text-navy group-hover:text-tealink">
+                  <h2 className="h-display text-[19px] leading-tight text-primary group-hover:text-secondary-ink">
                     {s.name}
                   </h2>
-                  <p className="mt-3 flex-1 text-[13px] leading-relaxed text-slate/70">
+                  <p className="mt-3 flex-1 text-[13px] leading-relaxed text-ink/70">
                     {s.groups
                       .map((g) => groups.find((x) => x.id === g)?.name)
                       .filter(Boolean)
                       .join(" · ")}
                   </p>
-                  <p className="data mt-4 border-t border-navy/8 pt-3 text-[12px] text-tealink">
+                  <p className="data mt-4 border-t border-primary/8 pt-3 text-[12px] text-secondary-ink">
                     {list.length} parts
                   </p>
                 </div>

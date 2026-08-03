@@ -84,11 +84,11 @@ function PasteTool({ catalogue }) {
   }
 
   return (
-    <section className="border border-navy/12 bg-white">
-      <div className="border-b border-navy/10 bg-mist px-6 py-4">
+    <section className="border border-primary/12 bg-base">
+      <div className="border-b border-primary/10 bg-surface px-6 py-4">
         <Eyebrow>Bulk entry</Eyebrow>
-        <h2 className="h-display mt-2 text-[20px] text-navy">Paste or upload a parts list</h2>
-        <p className="mt-1.5 max-w-2xl text-[13px] leading-relaxed text-slate/75">
+        <h2 className="h-display mt-2 text-[20px] text-primary">Paste or upload a parts list</h2>
+        <p className="mt-1.5 max-w-2xl text-[13px] leading-relaxed text-ink/75">
           One part number per line, with an optional quantity — <span className="data">LMB22, 4</span>{" "}
           or <span className="data">A202A x 2</span>. We match each line against the catalogue and
           show you what we could not find.
@@ -102,20 +102,20 @@ function PasteTool({ catalogue }) {
           rows={7}
           placeholder={"LMB22, 4\nA202A x 2\nTARA120E\nSA80, 1"}
           aria-label="Parts list"
-          className="data w-full resize-y border border-navy/15 bg-white p-4 text-[13px] leading-relaxed text-navy placeholder:text-slate/70 focus:border-teal focus:outline-none"
+          className="data w-full resize-y border border-primary/15 bg-base p-4 text-[13px] leading-relaxed text-primary placeholder:text-ink/70 focus:border-secondary-ink focus:outline-none"
         />
         <div className="mt-3 flex flex-wrap items-center gap-3">
           <button
             type="button"
             onClick={() => run()}
-            className="bg-deep px-5 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-teal"
+            className="bg-primary-soft px-5 py-2.5 text-[13px] font-semibold text-on-primary transition-colors hover:bg-secondary-ink"
           >
             Match against catalogue
           </button>
           <button
             type="button"
             onClick={() => fileRef.current?.click()}
-            className="border border-navy/20 px-5 py-2.5 text-[13px] font-semibold text-navy transition-colors hover:border-teal hover:text-tealink"
+            className="border border-primary/20 px-5 py-2.5 text-[13px] font-semibold text-primary transition-colors hover:border-secondary-ink hover:text-secondary-ink"
           >
             Upload CSV or TXT
           </button>
@@ -133,7 +133,7 @@ function PasteTool({ catalogue }) {
                 setText("");
                 setResult(null);
               }}
-              className="text-[13px] text-slate/70 hover:text-coralink"
+              className="text-[13px] text-ink/70 hover:text-accent-ink"
             >
               Clear
             </button>
@@ -142,9 +142,9 @@ function PasteTool({ catalogue }) {
 
         {result && (
           <div className="mt-6 space-y-5">
-            <div className="flex flex-wrap items-center gap-4 border-y border-navy/10 py-3">
-              <p className="data text-[13px] text-tealink">{result.matched.length} matched</p>
-              <p className="data text-[13px] text-coralink">{result.unmatched.length} not found</p>
+            <div className="flex flex-wrap items-center gap-4 border-y border-primary/10 py-3">
+              <p className="data text-[13px] text-secondary-ink">{result.matched.length} matched</p>
+              <p className="data text-[13px] text-accent-ink">{result.unmatched.length} not found</p>
               {result.matched.length > 0 && (
                 <button
                   type="button"
@@ -153,7 +153,7 @@ function PasteTool({ catalogue }) {
                     setResult(null);
                     setText("");
                   }}
-                  className="ml-auto bg-coral px-4 py-2 text-[13px] font-semibold text-navy hover:bg-coral/90"
+                  className="ml-auto bg-accent px-4 py-2 text-[13px] font-semibold text-on-accent hover:bg-accent/90"
                 >
                   Add {result.matched.length} matched lines to request
                 </button>
@@ -162,17 +162,17 @@ function PasteTool({ catalogue }) {
 
             {result.matched.length > 0 && (
               <div>
-                <p className="eyebrow text-slate/70">Matched</p>
-                <ul className="mt-2 divide-y divide-navy/8 border border-navy/10">
+                <p className="eyebrow text-ink/70">Matched</p>
+                <ul className="mt-2 divide-y divide-primary/8 border border-primary/10">
                   {result.matched.map((m, i) => (
                     <li key={i} className="flex items-center gap-4 px-4 py-2.5">
-                      <span className="data w-28 shrink-0 text-[13px] font-medium text-tealink">
+                      <span className="data w-28 shrink-0 text-[13px] font-medium text-secondary-ink">
                         {m.product.partNumber}
                       </span>
-                      <span className="min-w-0 flex-1 truncate text-[13px] text-slate/75">
+                      <span className="min-w-0 flex-1 truncate text-[13px] text-ink/75">
                         {m.product.name}
                       </span>
-                      <span className="data shrink-0 text-[12px] text-slate/70">× {m.qty}</span>
+                      <span className="data shrink-0 text-[12px] text-ink/70">× {m.qty}</span>
                     </li>
                   ))}
                 </ul>
@@ -181,14 +181,14 @@ function PasteTool({ catalogue }) {
 
             {result.unmatched.length > 0 && (
               <div>
-                <p className="eyebrow text-slate/70">Not in the listed catalogue</p>
-                <p className="mt-1.5 text-[13px] leading-relaxed text-slate/70">
+                <p className="eyebrow text-ink/70">Not in the listed catalogue</p>
+                <p className="mt-1.5 text-[13px] leading-relaxed text-ink/70">
                   These will still be sent with your request — we source beyond what is listed
                   and will confirm availability.
                 </p>
-                <ul className="mt-2 divide-y divide-navy/8 border border-coral/25 bg-coral/[0.04]">
+                <ul className="mt-2 divide-y divide-primary/8 border border-accent/25 bg-accent/[0.04]">
                   {result.unmatched.map((u, i) => (
-                    <li key={i} className="data px-4 py-2.5 text-[13px] text-slate/70">
+                    <li key={i} className="data px-4 py-2.5 text-[13px] text-ink/70">
                       {u.raw}
                     </li>
                   ))}
@@ -206,21 +206,21 @@ function Field({ label, required, hint, children }) {
   return (
     <label className="block">
       <span className="flex items-baseline gap-2">
-        <span className="text-[13px] font-medium text-navy">{label}</span>
+        <span className="text-[13px] font-medium text-primary">{label}</span>
         {required ? (
-          <span className="data text-[11px] text-coralink">required</span>
+          <span className="data text-[11px] text-accent-ink">required</span>
         ) : (
-          <span className="data text-[11px] text-slate/70">optional</span>
+          <span className="data text-[11px] text-ink/70">optional</span>
         )}
       </span>
       {children}
-      {hint && <span className="mt-1 block text-[12px] text-slate/70">{hint}</span>}
+      {hint && <span className="mt-1 block text-[12px] text-ink/70">{hint}</span>}
     </label>
   );
 }
 
 const input =
-  "mt-1.5 w-full border border-navy/15 bg-white px-3.5 py-2.5 text-[14px] text-navy placeholder:text-slate/70 focus:border-teal focus:outline-none";
+  "mt-1.5 w-full border border-primary/15 bg-base px-3.5 py-2.5 text-[14px] text-primary placeholder:text-ink/70 focus:border-secondary-ink focus:outline-none";
 
 export default function QuoteBuilder({ catalogue, company }) {
   const { lines, setQty, remove, clear, count } = useRfq();
@@ -240,9 +240,9 @@ export default function QuoteBuilder({ catalogue, company }) {
     return (
       <div className="mx-auto max-w-2xl px-6 py-24 text-center">
         <Eyebrow>Request received</Eyebrow>
-        <h1 className="h-display mt-4 text-[30px] text-navy">Your request has been sent</h1>
-        <p className="data mt-4 text-[15px] text-tealink">{ref}</p>
-        <p className="mx-auto mt-4 max-w-md text-[15px] leading-relaxed text-slate/70">
+        <h1 className="h-display mt-4 text-[30px] text-primary">Your request has been sent</h1>
+        <p className="data mt-4 text-[15px] text-secondary-ink">{ref}</p>
+        <p className="mx-auto mt-4 max-w-md text-[15px] leading-relaxed text-ink/70">
           Our sales team will respond with a formal quotation within {company.responseTime},
           including unit pricing, lead time, freight and applicable VAT. A copy has been sent to
           the email address you provided.
@@ -250,18 +250,18 @@ export default function QuoteBuilder({ catalogue, company }) {
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Link
             href="/catalog"
-            className="bg-coral px-6 py-3 text-[14px] font-semibold text-navy hover:bg-coral/90"
+            className="bg-accent px-6 py-3 text-[14px] font-semibold text-on-accent hover:bg-accent/90"
           >
             Back to catalogue
           </Link>
           <a
             href={`mailto:${company.quoteEmail}`}
-            className="border border-navy/20 px-6 py-3 text-[14px] font-semibold text-navy hover:border-teal hover:text-tealink"
+            className="border border-primary/20 px-6 py-3 text-[14px] font-semibold text-primary hover:border-secondary-ink hover:text-secondary-ink"
           >
             Email the sales team
           </a>
         </div>
-        <p className="mt-10 text-[12px] text-slate/70">
+        <p className="mt-10 text-[12px] text-ink/70">
           Demonstration build — nothing was actually sent.
         </p>
       </div>
@@ -272,10 +272,10 @@ export default function QuoteBuilder({ catalogue, company }) {
     <div className="mx-auto max-w-shell px-6 py-12">
       <div className="max-w-2xl">
         <Eyebrow>Quote request</Eyebrow>
-        <h1 className="h-display mt-3 text-[30px] text-navy md:text-[40px]">
+        <h1 className="h-display mt-3 text-[30px] text-primary md:text-[40px]">
           Build your request
         </h1>
-        <p className="mt-4 text-[15px] leading-relaxed text-slate/70">
+        <p className="mt-4 text-[15px] leading-relaxed text-ink/70">
           No account needed. Add parts from the catalogue or paste a list, tell us where it is
           going, and we will return a formal quotation within {company.responseTime}.
         </p>
@@ -284,14 +284,14 @@ export default function QuoteBuilder({ catalogue, company }) {
       <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_400px]">
         <div className="space-y-8">
           {/* basket */}
-          <section className="border border-navy/12 bg-white">
-            <div className="flex items-center justify-between border-b border-navy/10 bg-mist px-6 py-4">
+          <section className="border border-primary/12 bg-base">
+            <div className="flex items-center justify-between border-b border-primary/10 bg-surface px-6 py-4">
               <div>
                 <Eyebrow>Line items</Eyebrow>
-                <h2 className="h-display mt-2 text-[20px] text-navy">
+                <h2 className="h-display mt-2 text-[20px] text-primary">
                   {lines.length} part{lines.length === 1 ? "" : "s"}
                   {count > 0 && (
-                    <span className="data ml-2 text-[14px] font-normal text-slate/70">
+                    <span className="data ml-2 text-[14px] font-normal text-ink/70">
                       {count} units
                     </span>
                   )}
@@ -301,7 +301,7 @@ export default function QuoteBuilder({ catalogue, company }) {
                 <button
                   type="button"
                   onClick={clear}
-                  className="text-[13px] font-semibold text-coralink hover:underline"
+                  className="text-[13px] font-semibold text-accent-ink hover:underline"
                 >
                   Clear all
                 </button>
@@ -310,40 +310,40 @@ export default function QuoteBuilder({ catalogue, company }) {
 
             {lines.length === 0 ? (
               <div className="px-6 py-12 text-center">
-                <p className="text-[15px] text-slate/70">No parts added yet.</p>
-                <p className="mx-auto mt-2 max-w-sm text-[13px] leading-relaxed text-slate/70">
+                <p className="text-[15px] text-ink/70">No parts added yet.</p>
+                <p className="mx-auto mt-2 max-w-sm text-[13px] leading-relaxed text-ink/70">
                   Search the catalogue and use “Add to quote”, or paste a parts list below.
                 </p>
                 <Link
                   href="/catalog"
-                  className="mt-5 inline-block border border-navy/20 px-5 py-2.5 text-[13px] font-semibold text-navy hover:border-teal hover:text-tealink"
+                  className="mt-5 inline-block border border-primary/20 px-5 py-2.5 text-[13px] font-semibold text-primary hover:border-secondary-ink hover:text-secondary-ink"
                 >
                   Browse the catalogue
                 </Link>
               </div>
             ) : (
-              <ul className="divide-y divide-navy/8">
+              <ul className="divide-y divide-primary/8">
                 {lines.map((l) => (
                   <li key={l.id} className="flex items-center gap-4 px-4 py-4 sm:px-6">
-                    <div className="flex h-14 w-14 shrink-0 items-center justify-center border border-navy/10 bg-white p-1">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center border border-primary/10 bg-base p-1">
                       {l.image ? (
                         /* eslint-disable-next-line @next/next/no-img-element */
                         <img src={l.image} alt="" className="h-full w-full object-contain" />
                       ) : (
-                        <span className="data text-[9px] text-slate/70">n/a</span>
+                        <span className="data text-[9px] text-ink/70">n/a</span>
                       )}
                     </div>
                     <div className="min-w-0 flex-1">
                       <PartNumber value={l.partNumber} size="xs" />
-                      <p className="mt-1.5 truncate text-[13px] text-slate/75">{l.name}</p>
-                      <p className="text-[12px] text-slate/70">{l.brand}</p>
+                      <p className="mt-1.5 truncate text-[13px] text-ink/75">{l.name}</p>
+                      <p className="text-[12px] text-ink/70">{l.brand}</p>
                     </div>
                     <div className="flex shrink-0 items-center gap-2">
                       <button
                         type="button"
                         onClick={() => setQty(l.id, l.qty - 1)}
                         aria-label={`Decrease quantity of ${l.partNumber}`}
-                        className="h-8 w-8 border border-navy/15 text-[15px] text-navy hover:border-teal hover:text-tealink"
+                        className="h-8 w-8 border border-primary/15 text-[15px] text-primary hover:border-secondary-ink hover:text-secondary-ink"
                       >
                         −
                       </button>
@@ -353,13 +353,13 @@ export default function QuoteBuilder({ catalogue, company }) {
                           setQty(l.id, parseInt(e.target.value.replace(/\D/g, "") || "1", 10))
                         }
                         aria-label={`Quantity of ${l.partNumber}`}
-                        className="data h-8 w-14 border border-navy/15 text-center text-[13px] text-navy focus:border-teal focus:outline-none"
+                        className="data h-8 w-14 border border-primary/15 text-center text-[13px] text-primary focus:border-secondary-ink focus:outline-none"
                       />
                       <button
                         type="button"
                         onClick={() => setQty(l.id, l.qty + 1)}
                         aria-label={`Increase quantity of ${l.partNumber}`}
-                        className="h-8 w-8 border border-navy/15 text-[15px] text-navy hover:border-teal hover:text-tealink"
+                        className="h-8 w-8 border border-primary/15 text-[15px] text-primary hover:border-secondary-ink hover:text-secondary-ink"
                       >
                         +
                       </button>
@@ -367,7 +367,7 @@ export default function QuoteBuilder({ catalogue, company }) {
                         type="button"
                         onClick={() => remove(l.id)}
                         aria-label={`Remove ${l.partNumber}`}
-                        className="ml-1 px-2 text-[13px] text-slate/70 hover:text-coralink"
+                        className="ml-1 px-2 text-[13px] text-ink/70 hover:text-accent-ink"
                       >
                         ✕
                       </button>
@@ -382,10 +382,10 @@ export default function QuoteBuilder({ catalogue, company }) {
         </div>
 
         {/* form */}
-        <form onSubmit={submit} className="space-y-5 self-start border border-navy/12 bg-white p-6 lg:sticky lg:top-28">
+        <form onSubmit={submit} className="space-y-5 self-start border border-primary/12 bg-base p-6 lg:sticky lg:top-28">
           <div>
             <Eyebrow>Your details</Eyebrow>
-            <p className="mt-2 text-[13px] leading-relaxed text-slate/70">
+            <p className="mt-2 text-[13px] leading-relaxed text-ink/70">
               We quote to companies and to individual owners alike. Vessel details help us confirm
               fitment and delivery.
             </p>
@@ -431,24 +431,24 @@ export default function QuoteBuilder({ catalogue, company }) {
             />
           </Field>
 
-          <div className="border-t border-navy/10 pt-5">
-            <p className="data text-[12px] text-slate/70">
+          <div className="border-t border-primary/10 pt-5">
+            <p className="data text-[12px] text-ink/70">
               {lines.length} line{lines.length === 1 ? "" : "s"} · {count} unit
               {count === 1 ? "" : "s"} will be attached
             </p>
             <button
               type="submit"
               disabled={lines.length === 0}
-              className="mt-3 w-full bg-coral px-6 py-3.5 text-[14px] font-semibold text-navy transition-colors hover:bg-coral/90 disabled:cursor-not-allowed disabled:bg-navy/12 disabled:text-navy/70"
+              className="mt-3 w-full bg-accent px-6 py-3.5 text-[14px] font-semibold text-on-accent transition-colors hover:bg-accent/90 disabled:cursor-not-allowed disabled:bg-primary/12 disabled:text-primary/70"
             >
               Send quote request
             </button>
             {lines.length === 0 && (
-              <p className="mt-2 text-center text-[12px] text-slate/70">
+              <p className="mt-2 text-center text-[12px] text-ink/70">
                 Add at least one part to send a request.
               </p>
             )}
-            <p className="mt-4 text-[12px] leading-relaxed text-slate/70">
+            <p className="mt-4 text-[12px] leading-relaxed text-ink/70">
               Sent to {company.quoteEmail}. We reply within {company.responseTime}. Prices are
               quoted exclusive of VAT; UAE supply is invoiced with 5% VAT and our TRN.
             </p>

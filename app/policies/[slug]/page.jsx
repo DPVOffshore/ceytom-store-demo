@@ -74,12 +74,12 @@ export default function PolicyPage({ params }) {
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
       <Eyebrow>Policy</Eyebrow>
-      <h1 className="h-display mt-3 text-[32px] text-navy md:text-[40px]">{p.title}</h1>
-      <p className="mt-5 text-[16px] leading-relaxed text-slate/75">{p.intro}</p>
+      <h1 className="h-display mt-3 text-[32px] text-primary md:text-[40px]">{p.title}</h1>
+      <p className="mt-5 text-[16px] leading-relaxed text-ink/75">{p.intro}</p>
 
-      <div className="mt-6 border-l-2 border-coral bg-coral/[0.05] px-5 py-4">
-        <p className="text-[13px] leading-relaxed text-slate/75">
-          <span className="font-semibold text-navy">Draft for review.</span> This wording is a
+      <div className="mt-6 border-l-2 border-accent bg-accent/[0.05] px-5 py-4">
+        <p className="text-[13px] leading-relaxed text-ink/75">
+          <span className="font-semibold text-primary">Draft for review.</span> This wording is a
           starting point for the build and has not been reviewed by a UAE-qualified legal
           advisor. It must be reviewed before the site goes live.
         </p>
@@ -87,17 +87,17 @@ export default function PolicyPage({ params }) {
 
       <dl className="mt-10">
         {p.sections.map(([h, body], i) => (
-          <div key={h} className="border-t border-navy/10 py-6">
+          <div key={h} className="border-t border-primary/10 py-6">
             <dt className="flex items-baseline gap-3">
-              <span className="data text-[12px] text-tealink">{String(i + 1).padStart(2, "0")}</span>
-              <span className="h-display text-[19px] text-navy">{h}</span>
+              <span className="data text-[12px] text-secondary-ink">{String(i + 1).padStart(2, "0")}</span>
+              <span className="h-display text-[19px] text-primary">{h}</span>
             </dt>
-            <dd className="mt-3 pl-9 text-[15px] leading-relaxed text-slate/75">{body}</dd>
+            <dd className="mt-3 pl-9 text-[15px] leading-relaxed text-ink/75">{body}</dd>
           </div>
         ))}
       </dl>
 
-      <p className="data mt-10 border-t border-navy/10 pt-6 text-[12px] leading-relaxed text-slate/70">
+      <p className="data mt-10 border-t border-primary/10 pt-6 text-[12px] leading-relaxed text-ink/70">
         {COMPANY.legalName} · Trade licence {COMPANY.licence} · TRN {COMPANY.trn}
         <br />
         {COMPANY.address}
