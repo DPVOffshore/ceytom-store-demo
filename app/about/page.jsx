@@ -17,7 +17,7 @@ export default function AboutPage() {
           <h1 className="h-display mt-4 max-w-3xl text-[32px] leading-tight md:text-[46px]">
             A Dubai supply base for shipboard electrical control
           </h1>
-          <p className="mt-6 max-w-2xl text-[16px] leading-relaxed text-on-primary/80">
+          <p className="mt-6 max-w-2xl text-[16px] leading-relaxed text-on-primary/90">
             {COMPANY.legalName} supplies the switchgear, control and signalling components that
             keep vessels operating — from main switchboard cam switches to bridge indicators and
             engine-room limit switches. We hold stock in Dubai and deliver to vessel.
@@ -116,7 +116,7 @@ export default function AboutPage() {
 
             <div className="bg-primary p-6 text-on-primary">
               <p className="h-display text-[18px]">Have a parts list ready?</p>
-              <p className="mt-2 text-[13px] leading-relaxed text-on-primary/80">
+              <p className="mt-2 text-[13px] leading-relaxed text-on-primary/90">
                 Paste up to 100 lines and we will match them against stock and quote as one package.
               </p>
               <Link

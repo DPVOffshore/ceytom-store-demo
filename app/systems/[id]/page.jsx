@@ -47,13 +47,13 @@ export default function SystemPage({ params }) {
       <section className="schematic border-b border-primary/10 bg-primary text-on-primary">
         <div className="mx-auto max-w-shell px-6 py-14">
           <nav className="mb-6">
-            <Link href="/systems" className="text-[13px] text-tint/70 hover:text-tint">
+            <Link href="/systems" className="text-[13px] text-tint/90 hover:text-tint">
               ← All ship systems
             </Link>
           </nav>
           <Eyebrow tone="light">Ship system</Eyebrow>
           <h1 className="h-display mt-3 text-[32px] leading-tight md:text-[44px]">{s.name}</h1>
-          <p className="mt-5 max-w-3xl text-[15px] leading-relaxed text-on-primary/80">{BLURB[s.id]}</p>
+          <p className="mt-5 max-w-3xl text-[15px] leading-relaxed text-on-primary/90">{BLURB[s.id]}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href={`/catalog?group=${s.groups[0]}`}

@@ -15,7 +15,7 @@ export default function SystemsPage() {
         <div className="mx-auto max-w-shell px-6 py-12">
           <Eyebrow tone="light">Where it fits</Eyebrow>
           <h1 className="h-display mt-3 text-[30px] md:text-[40px]">Browse by ship system</h1>
-          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-on-primary/75">
+          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-on-primary/90">
             Chief engineers and superintendents specify by location on the vessel, not by
             component taxonomy. These groupings follow the spaces you work in.
           </p>

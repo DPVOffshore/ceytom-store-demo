@@ -23,7 +23,7 @@ export default function CatalogPage({ searchParams }) {
           <h1 className="h-display mt-3 text-[30px] md:text-[40px]">
             {products.length} part numbers
           </h1>
-          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-on-primary/75">
+          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-on-primary/90">
             Filter by the specification that matters on a switchboard drawing — current rating,
             voltage, ingress protection, mounting hole diameter, plate size, pole configuration
             and certification. Prices are quoted, not listed.

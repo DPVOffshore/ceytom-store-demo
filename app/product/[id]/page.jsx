@@ -1,8 +1,19 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { products, getProduct, relatedProducts, COMPANY } from "@/lib/data";
-import { PartNumber, Stock, Eyebrow } from "@/components/Bits";
+import {
+  products,
+  getProduct,
+  relatedProducts,
+  COMPANY,
+  availability,
+  moqOf,
+  assemblyFor,
+  crossrefsForProduct,
+} from "@/lib/data";
+import { PartNumber, Stock, Eyebrow, MatchBadge, CompetitorPn } from "@/components/Bits";
 import ProductCard, { AddToQuote } from "@/components/ProductCard";
+import AssemblyPanel from "@/components/AssemblyPanel";
+import SailingCheck from "@/components/SailingCheck";
 
 export function generateStaticParams() {
   return products.map((p) => ({ id: p.id }));
@@ -11,9 +22,27 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const p = getProduct(params.id);
   if (!p) return { title: "Part not found" };
+  const replaces = crossrefsForProduct(p.id);
+  const replacesText = replaces.length
+    ? ` Replaces ${replaces.slice(0, 4).map((r) => r.competitorPn).join(", ")}.`
+    : "";
   return {
     title: `${p.partNumber} — ${p.name}`,
-    description: `${p.partNumber}: ${p.description}. ${p.brand}${p.origin ? `, ${p.origin}` : ""}. Price on request from ${COMPANY.legalName}, Dubai.`,
+    description: `${p.partNumber}: ${p.description}. ${p.brand}${p.origin ? `, ${p.origin}` : ""}.${replacesText} Price on request from ${COMPANY.legalName}, Dubai.`,
+  };
+}
+
+/** Only what the client components actually need — not the whole record. */
+function slim(p) {
+  return {
+    id: p.id,
+    partNumber: p.partNumber,
+    name: p.name,
+    image: p.image ?? null,
+    brand: p.brand ?? null,
+    stockQty: p.stockQty,
+    leadTimeDays: p.leadTimeDays,
+    restockDays: p.restockDays,
   };
 }
 
@@ -33,6 +62,18 @@ export default function ProductPage({ params }) {
   if (!p) notFound();
   const related = relatedProducts(p, 4);
   const bullets = p.description.split(" · ").filter(Boolean);
+  const avail = availability(p, 1);
+  const moq = moqOf(p);
+  const replaces = crossrefsForProduct(p.id);
+  const relations = assemblyFor(p.id).map((rel) => ({
+    id: rel.id,
+    role: rel.role,
+    kind: rel.kind,
+    reason: rel.reason,
+    unlisted: !!rel.unlisted,
+    label: rel.unlisted ? rel.label : rel.product.name,
+    target: rel.product ? slim(rel.product) : null,
+  }));
 
   return (
     <>
@@ -120,10 +161,15 @@ export default function ProductPage({ params }) {
                     respond with a formal quotation within {COMPANY.responseTime}.
                   </p>
                 </div>
-                <Stock value={p.stock} />
+                <div className="text-right">
+                  <Stock product={p} />
+                  {avail.detail && (
+                    <p className="data mt-1 text-[12px] text-ink/70">{avail.detail}</p>
+                  )}
+                </div>
               </div>
               <div className="mt-5 flex flex-wrap gap-3">
-                <AddToQuote product={p} label="Add to quote request" />
+                <AddToQuote product={p} qty={moq} label="Add to quote request" />
                 <Link
                   href="/quote"
                   className="border border-primary/20 px-4 py-2 text-[13px] font-semibold text-primary transition-colors hover:border-secondary-ink hover:text-secondary-ink"
@@ -131,12 +177,14 @@ export default function ProductPage({ params }) {
                   View request
                 </Link>
               </div>
-              {p.leadTime && (
+              {moq > 1 && (
                 <p className="data mt-4 text-[12px] text-ink/70">
-                  Indicative lead time if sourced: {p.leadTime}
+                  Minimum order quantity: {moq}. Small parts are supplied in multiples.
                 </p>
               )}
             </div>
+
+            <SailingCheck product={slim(p)} />
 
             <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-[13px]">
               <a href={`tel:${COMPANY.landline.replace(/\s/g, "")}`} className="text-secondary-ink hover:underline">
@@ -186,8 +234,16 @@ export default function ProductPage({ params }) {
           <div>
             <Eyebrow>Supply &amp; documentation</Eyebrow>
             <dl className="mt-4 border border-primary/12 bg-base px-5 py-2">
-              <Row label="Availability">{p.stock}</Row>
-              <Row label="Lead time">{p.leadTime || "Ex-stock Dubai"}</Row>
+              <Row label="Availability">
+                {avail.detail ? `${avail.label} · ${avail.detail}` : avail.label}
+              </Row>
+              <Row label="Dubai stock">
+                {p.stockQty > 0 ? `${p.stockQty} units` : "Nil — sourced against order"}
+              </Row>
+              <Row label="Lead time">
+                {p.leadTime || (p.restockDays ? `Ex-stock; replenishment in ${p.restockDays} days` : "Ex-stock Dubai")}
+              </Row>
+              <Row label="Minimum order">{moq > 1 ? `${moq} pieces` : "1 piece"}</Row>
               <Row label="Delivery">
                 Own transport within the UAE, including delivery to vessel at{" "}
                 {COMPANY.ports.join(", ")}. Aramex and DHL for GCC and international.
@@ -206,7 +262,7 @@ export default function ProductPage({ params }) {
 
             <div className="mt-6 border border-primary/12 bg-primary p-6 text-on-primary">
               <p className="h-display text-[17px]">Need this in quantity?</p>
-              <p className="mt-2 text-[13px] leading-relaxed text-on-primary/80">
+              <p className="mt-2 text-[13px] leading-relaxed text-on-primary/90">
                 Send a full parts list and we will quote it as one package with consolidated
                 freight. Lists of up to 100 lines can be pasted or uploaded directly.
               </p>
@@ -219,6 +275,46 @@ export default function ProductPage({ params }) {
             </div>
           </div>
         </section>
+
+        {/* Completes this assembly — above the related strip, because a missing
+            required component is a problem, not a browsing suggestion. */}
+        <AssemblyPanel product={slim(p)} relations={relations} qty={moq} />
+
+        {replaces.length > 0 && (
+          <section className="mt-16">
+            <Eyebrow>Cross-reference</Eyebrow>
+            <h2 className="h-display mt-3 text-[24px] text-primary">Replaces</h2>
+            <p className="mt-3 max-w-2xl text-[14px] leading-relaxed text-ink/75">
+              {p.partNumber} is offered against the competitor references below. Direct means form,
+              fit and function; functional means it works with the noted difference; consult means
+              our sales team confirms before you order.
+            </p>
+
+            <ul className="mt-6 grid gap-px border border-primary/10 bg-primary/10 sm:grid-cols-2">
+              {replaces.map((r) => (
+                <li key={r.competitorPn} className="bg-base p-4">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <CompetitorPn value={r.competitorPn} />
+                    <MatchBadge type={r.matchType} />
+                  </div>
+                  <p className="mt-2 text-[13px] text-ink/75">{r.brand}</p>
+                  {r.note && (
+                    <p className="mt-1.5 text-[12px] leading-relaxed text-ink/70">{r.note}</p>
+                  )}
+                </li>
+              ))}
+            </ul>
+
+            <p className="mt-3 text-[12px] leading-relaxed text-ink/70">
+              Cross-references cover a subset of the catalogue and are being extended. If the part
+              you are replacing is not listed,{" "}
+              <Link href="/cross-reference" className="font-semibold text-secondary-ink hover:underline">
+                send it to us
+              </Link>{" "}
+              and we will identify the equivalent.
+            </p>
+          </section>
+        )}
 
         {related.length > 0 && (
           <section className="mt-20">

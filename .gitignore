@@ -5,3 +5,4 @@ out/
 *.log
 tools/raw2.json
 tools/catalog.json
+.audit-shots/

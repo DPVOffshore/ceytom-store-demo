@@ -6,13 +6,20 @@ import { useRfq } from "./RfqProvider";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { COMPANY } from "@/lib/data";
 
+// Cross-reference earns a nav slot rather than living only on the home page:
+// a buyer holding a failed competitor part can arrive on any page, and there is
+// no other route to it once they are deep in the catalogue. "By ship system"
+// shortens to keep six items clear of the theme switcher at 1024px.
 const NAV = [
   { href: "/catalog", label: "Catalogue" },
-  { href: "/systems", label: "By ship system" },
+  { href: "/systems", label: "Ship systems" },
+  { href: "/cross-reference", label: "Cross-reference" },
   { href: "/brands", label: "Brands" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
+
+const MOBILE_NAV = [...NAV, { href: "/quote/saved", label: "Saved lists" }];
 
 export default function Header() {
   const { count } = useRfq();
@@ -23,7 +30,7 @@ export default function Header() {
       {/* utility strip */}
       <div className="hidden bg-primary text-on-primary lg:block">
         <div className="mx-auto flex max-w-shell items-center justify-between px-6 py-1.5">
-          <p className="data text-[11px] text-tint/70">
+          <p className="data text-[11px] text-tint/90">
             {COMPANY.city}, {COMPANY.country} · TRN {COMPANY.trn} · {COMPANY.hours}
           </p>
           <div className="data flex items-center gap-5 text-[11px]">
@@ -47,7 +54,7 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="ml-auto hidden items-center gap-7 lg:flex">
+        <nav className="ml-auto hidden items-center gap-5 lg:flex xl:gap-7">
           {NAV.map((n) => (
             <Link
               key={n.href}
@@ -86,7 +93,7 @@ export default function Header() {
 
       {open && (
         <nav className="border-t border-primary/10 bg-base px-6 py-3 lg:hidden">
-          {NAV.map((n) => (
+          {MOBILE_NAV.map((n) => (
             <Link
               key={n.href}
               href={n.href}

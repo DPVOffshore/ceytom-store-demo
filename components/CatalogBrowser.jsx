@@ -3,6 +3,7 @@
 import { useMemo, useState, useEffect } from "react";
 import ProductCard from "./ProductCard";
 import { Eyebrow } from "./Bits";
+import { availabilityKey, availabilityRank, AVAILABILITY_FILTERS } from "@/lib/availability";
 
 const CURRENT_BANDS = [
   { id: "0-10", label: "Up to 10 A", min: 0, max: 10 },
@@ -54,7 +55,7 @@ function FilterGroup({ title, children, defaultOpen = true, count }) {
       >
         <span className="eyebrow text-ink/70">{title}</span>
         <span className="data flex items-center gap-2 text-[11px] text-ink/70">
-          {count ? <span className="text-accent">{count}</span> : null}
+          {count ? <span className="text-accent-ink">{count}</span> : null}
           <span>{open ? "−" : "+"}</span>
         </span>
       </button>
@@ -136,11 +137,7 @@ export default function CatalogBrowser({ products, groups, initial }) {
       if (f.holeDia.length && !f.holeDia.some((v) => p.holeDia.includes(v))) return false;
       if (f.plateSize.length && !f.plateSize.some((v) => p.plateSize.includes(v))) return false;
       if (f.poles.length && !f.poles.some((v) => p.poles.includes(v))) return false;
-      if (f.stock.length) {
-        const key = p.stock.startsWith("In stock")
-          ? "in" : p.stock.startsWith("Low") ? "low" : "sourced";
-        if (!f.stock.includes(key)) return false;
-      }
+      if (f.stock.length && !f.stock.includes(availabilityKey(p))) return false;
       if (f.current.length) {
         const ok = f.current.some((id) => {
           const b = CURRENT_BANDS.find((x) => x.id === id);
@@ -177,7 +174,9 @@ export default function CatalogBrowser({ products, groups, initial }) {
     if (sort === "part") out = [...out].sort((a, b) => a.partNumber.localeCompare(b.partNumber));
     if (sort === "brand") out = [...out].sort((a, b) => a.brand.localeCompare(b.brand));
     if (sort === "stock")
-      out = [...out].sort((a, b) => a.stock.localeCompare(b.stock));
+      out = [...out].sort(
+        (a, b) => availabilityRank(a) - availabilityRank(b) || (b.stockQty ?? 0) - (a.stockQty ?? 0)
+      );
 
     return out;
   }, [products, q, f, sort]);
@@ -315,16 +314,15 @@ export default function CatalogBrowser({ products, groups, initial }) {
       </FilterGroup>
 
       <FilterGroup title="Availability" count={f.stock.length}>
-        {[["in", "In stock — Dubai"], ["low", "Low stock"], ["sourced", "Sourced to order"]].map(
-          ([id, label]) => (
-            <Check
-              key={id}
-              label={label}
-              checked={f.stock.includes(id)}
-              onChange={() => toggle("stock", id)}
-            />
-          )
-        )}
+        {AVAILABILITY_FILTERS.map(([id, label]) => (
+          <Check
+            key={id}
+            label={label}
+            hint={products.filter((p) => availabilityKey(p) === id).length}
+            checked={f.stock.includes(id)}
+            onChange={() => toggle("stock", id)}
+          />
+        ))}
       </FilterGroup>
     </div>
   );
@@ -365,7 +363,7 @@ export default function CatalogBrowser({ products, groups, initial }) {
               onClick={() => setShowFilters((s) => !s)}
               className="border border-primary/15 px-4 py-3 text-[13px] font-semibold text-primary lg:hidden"
             >
-              Filter {activeCount > 0 && <span className="text-accent">({activeCount})</span>}
+              Filter {activeCount > 0 && <span className="text-accent-ink">({activeCount})</span>}
             </button>
 
             <label className="flex items-center gap-2 text-[13px] text-ink/70">

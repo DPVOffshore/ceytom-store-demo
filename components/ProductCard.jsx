@@ -72,7 +72,7 @@ export default function ProductCard({ product: p }) {
         )}
 
         <div className="mt-4 flex items-center justify-between gap-3 border-t border-primary/8 pt-3">
-          <Stock value={p.stock} />
+          <Stock product={p} />
           <AddToQuote product={p} label="Add" />
         </div>
       </div>

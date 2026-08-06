@@ -28,7 +28,7 @@ export default function BrandsPage() {
           <h1 className="h-display mt-3 text-[30px] md:text-[40px]">
             {BRANDS.length} manufacturers
           </h1>
-          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-on-primary/75">
+          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-on-primary/90">
             We stock from established control-gear manufacturers across Taiwan, Italy, Germany and
             the USA. Country of origin is stated on every part and on export documentation.
           </p>

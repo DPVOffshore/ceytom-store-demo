@@ -1,0 +1,2756 @@
+{
+ "note": "Plausible demonstration data. Competitor series and part-number formats are real; individual pairings are generated and must be verified by sales before publication.",
+ "brands": [
+  "ABB",
+  "Allen-Bradley",
+  "Idec",
+  "Moeller / Eaton",
+  "Omron",
+  "Siemens",
+  "Telemecanique"
+ ],
+ "entries": [
+  {
+   "competitorPn": "3LD2112-0TK51",
+   "brand": "Siemens",
+   "ceytomId": "vs34",
+   "matchType": "consult",
+   "note": "Close on rating — confirm the enclosure rating your installation requires."
+  },
+  {
+   "competitorPn": "3LD2117-1TL51",
+   "brand": "Siemens",
+   "ceytomId": "ds480bsrr2",
+   "matchType": "functional",
+   "note": "Matches on rating and dimensions; the cable entry is M20, not PG16."
+  },
+  {
+   "competitorPn": "3LD2136-1TL52",
+   "brand": "Siemens",
+   "ceytomId": "hdg3",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3LD2195-0TK51",
+   "brand": "Siemens",
+   "ceytomId": "a615",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "3LD2200-0TK53",
+   "brand": "Siemens",
+   "ceytomId": "c102a",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3LD2225-0TK53",
+   "brand": "Siemens",
+   "ceytomId": "a226",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3LD2235-0TK52",
+   "brand": "Siemens",
+   "ceytomId": "a602",
+   "matchType": "consult",
+   "note": "Rating band overlaps — send the load details and we will confirm the size."
+  },
+  {
+   "competitorPn": "3LD2268-0TK52",
+   "brand": "Siemens",
+   "ceytomId": "a4180",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3LD2275-1TL52",
+   "brand": "Siemens",
+   "ceytomId": "mz25191",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3LD2293-0TK51",
+   "brand": "Siemens",
+   "ceytomId": "a419",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3LD2299-0TK53",
+   "brand": "Siemens",
+   "ceytomId": "c110",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3LD2367-1TL53",
+   "brand": "Siemens",
+   "ceytomId": "mz12252",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3LD2375-0TK52",
+   "brand": "Siemens",
+   "ceytomId": "a225",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3LD2417-0TK51",
+   "brand": "Siemens",
+   "ceytomId": "a469",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3LD2477-0TK51",
+   "brand": "Siemens",
+   "ceytomId": "a220-k4",
+   "matchType": "consult",
+   "note": "Confirm the terminal size against the cable you are landing."
+  },
+  {
+   "competitorPn": "3LD2516-0TK51",
+   "brand": "Siemens",
+   "ceytomId": "as34",
+   "matchType": "consult",
+   "note": "Confirm the terminal size against the cable you are landing."
+  },
+  {
+   "competitorPn": "3LD2575-0TK51",
+   "brand": "Siemens",
+   "ceytomId": "a1023",
+   "matchType": "functional",
+   "note": "Matches on rating and dimensions; the cable entry is M20, not PG16."
+  },
+  {
+   "competitorPn": "3NA3823-4",
+   "brand": "Siemens",
+   "ceytomId": "fnq-r",
+   "matchType": "functional",
+   "note": "Matches on rating and dimensions; the cable entry is M20, not PG16."
+  },
+  {
+   "competitorPn": "3NE1806-1",
+   "brand": "Siemens",
+   "ceytomId": "6x30",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3NW6821-5",
+   "brand": "Siemens",
+   "ceytomId": "632300",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3RF254-1BA25",
+   "brand": "Siemens",
+   "ceytomId": "asr-90dd-h",
+   "matchType": "functional",
+   "note": "Same 8-pin layout; overall height is 3 mm greater with the retaining clip fitted."
+  },
+  {
+   "competitorPn": "3RF290-1BA25",
+   "brand": "Siemens",
+   "ceytomId": "asr-40da-h",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3RG4020-0AG31",
+   "brand": "Siemens",
+   "ceytomId": "is-1204-a1",
+   "matchType": "functional",
+   "note": "Same duty and enclosure rating; fixing centres differ by 2 mm."
+  },
+  {
+   "competitorPn": "3RG4022-0BG32",
+   "brand": "Siemens",
+   "ceytomId": "is-3015-p1",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3RS140-1HD61",
+   "brand": "Siemens",
+   "ceytomId": "at-502b-01",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3SB3000-0AA31",
+   "brand": "Siemens",
+   "ceytomId": "pb22-green",
+   "matchType": "functional",
+   "note": "Matches on rating and travel; contact block clips from the front, not the rear."
+  },
+  {
+   "competitorPn": "3SB3000-0AA51",
+   "brand": "Siemens",
+   "ceytomId": "lxb30-yellow",
+   "matchType": "consult",
+   "note": "Dimensionally close — confirm the mounting centres against your panel drawing."
+  },
+  {
+   "competitorPn": "3SB3000-0AB21",
+   "brand": "Siemens",
+   "ceytomId": "t2pf10blk",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3SB3000-0AB31",
+   "brand": "Siemens",
+   "ceytomId": "pbf30-g",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3SB3000-0AB41",
+   "brand": "Siemens",
+   "ceytomId": "sp22-ml",
+   "matchType": "functional",
+   "note": "Equivalent rating; terminals are rear-entry rather than side-entry."
+  },
+  {
+   "competitorPn": "3SB3000-0AB51",
+   "brand": "Siemens",
+   "ceytomId": "sp315",
+   "matchType": "consult",
+   "note": "Close on cut-out and rating — confirm panel depth before ordering."
+  },
+  {
+   "competitorPn": "3SE5110-0CC03",
+   "brand": "Siemens",
+   "ceytomId": "az-4112",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3SE5112-0CC04",
+   "brand": "Siemens",
+   "ceytomId": "az-8111",
+   "matchType": "functional",
+   "note": "Same electrical rating; the terminal shroud is a separate accessory here."
+  },
+  {
+   "competitorPn": "3SE5119-0BC05",
+   "brand": "Siemens",
+   "ceytomId": "az-6114",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "3SE5119-0CC05",
+   "brand": "Siemens",
+   "ceytomId": "mj-7408",
+   "matchType": "consult",
+   "note": "Rating band overlaps — send the load details and we will confirm the size."
+  },
+  {
+   "competitorPn": "3SE5121-0BC05",
+   "brand": "Siemens",
+   "ceytomId": "c025098a0",
+   "matchType": "consult",
+   "note": "Confirm the terminal size against the cable you are landing."
+  },
+  {
+   "competitorPn": "3SE5124-0BC02",
+   "brand": "Siemens",
+   "ceytomId": "az-8108l",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "3SU1050-0AB10-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "apb22-y",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3SU1050-0AB20-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "sp330",
+   "matchType": "functional",
+   "note": "Same cut-out and function; the bezel is chrome-plated brass rather than plastic."
+  },
+  {
+   "competitorPn": "3SU1050-0AB30-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "sp22l",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3SU1050-0AB40-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "t2pf01r",
+   "matchType": "consult",
+   "note": "Close on cut-out and rating — confirm panel depth before ordering."
+  },
+  {
+   "competitorPn": "3SU1050-0AB50-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "sp19-m",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out and contact rating; terminal screws are M3, not M3.5."
+  },
+  {
+   "competitorPn": "3SU1050-0AL30-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "lxb30-green",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3SU1050-0AL40-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "sp19-ml",
+   "matchType": "functional",
+   "note": "Same function and cut-out; body sits 4 mm shallower behind the panel."
+  },
+  {
+   "competitorPn": "3SU1050-0AL50-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "t2plf10y",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3SU1050-1HB20-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "lmb22",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3SU1050-2BF20-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "ksn22-3",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3SU1050-2BF30-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "t2prs320bk",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; the legend ring is a separate line here, not fitted."
+  },
+  {
+   "competitorPn": "3SU1050-2BF50-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "gsl22-2",
+   "matchType": "functional",
+   "note": "Matches on rating and travel; contact block clips from the front, not the rear."
+  },
+  {
+   "competitorPn": "3SU1050-2BM20-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "ms22-2l",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "3SU1050-2BM60-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "grs22-3",
+   "matchType": "functional",
+   "note": "Equivalent rating; terminals are rear-entry rather than side-entry."
+  },
+  {
+   "competitorPn": "3SU1051-6AA10-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "l22-w",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out; the LED module and holder are one piece here, not two."
+  },
+  {
+   "competitorPn": "3SU1051-6AA40-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "pln22-r",
+   "matchType": "consult",
+   "note": "This reference covers several lens colours — confirm the colour required."
+  },
+  {
+   "competitorPn": "3SU1051-6AA60-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "l22-bl",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out; the LED module and holder are one piece here, not two."
+  },
+  {
+   "competitorPn": "3SU1051-6AB40-0AA0",
+   "brand": "Siemens",
+   "ceytomId": "t2l-r",
+   "matchType": "consult",
+   "note": "This reference covers several lens colours — confirm the colour required."
+  },
+  {
+   "competitorPn": "4AM543-4AT10-0FA0",
+   "brand": "Siemens",
+   "ceytomId": "hbk00100e9",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "4NC5137-0CE28",
+   "brand": "Siemens",
+   "ceytomId": "tor8",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "700-HK3Z2",
+   "brand": "Allen-Bradley",
+   "ceytomId": "aefr-n",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "700-HK4Z20",
+   "brand": "Allen-Bradley",
+   "ceytomId": "jqx38",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "700-HK5A5",
+   "brand": "Allen-Bradley",
+   "ceytomId": "ptf38",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "700-HK6Z10",
+   "brand": "Allen-Bradley",
+   "ceytomId": "1rdt3s",
+   "matchType": "functional",
+   "note": "Identical coil ratings and contact arrangement; the test lever is mechanical, not latching."
+  },
+  {
+   "competitorPn": "700-HK6Z2",
+   "brand": "Allen-Bradley",
+   "ceytomId": "r2g1ch",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "700-HN106",
+   "brand": "Allen-Bradley",
+   "ceytomId": "sru05-e",
+   "matchType": "functional",
+   "note": "Same 8-pin layout; overall height is 3 mm greater with the retaining clip fitted."
+  },
+  {
+   "competitorPn": "700-HN132",
+   "brand": "Allen-Bradley",
+   "ceytomId": "sub11-e",
+   "matchType": "consult",
+   "note": "Coil voltage range differs at the low end — confirm your control voltage."
+  },
+  {
+   "competitorPn": "7KTPAC1566",
+   "brand": "Siemens",
+   "ceytomId": "eri72-v",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "7KTPAC1586",
+   "brand": "Siemens",
+   "ceytomId": "eri72-a",
+   "matchType": "consult",
+   "note": "Confirm the terminal size against the cable you are landing."
+  },
+  {
+   "competitorPn": "7PU4917-9AN21",
+   "brand": "Siemens",
+   "ceytomId": "972424",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800FM-F4",
+   "brand": "Allen-Bradley",
+   "ceytomId": "pb22-red",
+   "matchType": "functional",
+   "note": "Same cut-out and function; the bezel is chrome-plated brass rather than plastic."
+  },
+  {
+   "competitorPn": "800FM-F6",
+   "brand": "Allen-Bradley",
+   "ceytomId": "t2pf10bl",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800FM-L4",
+   "brand": "Allen-Bradley",
+   "ceytomId": "sp19-ml",
+   "matchType": "consult",
+   "note": "Contact count varies across this range — confirm how many N/O and N/C you need."
+  },
+  {
+   "competitorPn": "800FM-MT45",
+   "brand": "Allen-Bradley",
+   "ceytomId": "t2pes401r",
+   "matchType": "consult",
+   "note": "Close on cut-out and rating — confirm panel depth before ordering."
+  },
+  {
+   "competitorPn": "800FM-MT46",
+   "brand": "Allen-Bradley",
+   "ceytomId": "lms22",
+   "matchType": "consult",
+   "note": "Close on cut-out and rating — confirm panel depth before ordering."
+  },
+  {
+   "competitorPn": "800FM-P4",
+   "brand": "Allen-Bradley",
+   "ceytomId": "a16rs-r",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; body sits 3 mm shallower behind the plate."
+  },
+  {
+   "competitorPn": "800FM-P6",
+   "brand": "Allen-Bradley",
+   "ceytomId": "l22-bl",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out; the LED module and holder are one piece here, not two."
+  },
+  {
+   "competitorPn": "800FM-SM21",
+   "brand": "Allen-Bradley",
+   "ceytomId": "a16csr01s1blk",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800FM-SM22",
+   "brand": "Allen-Bradley",
+   "ceytomId": "grs22-3",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800FM-SM23",
+   "brand": "Allen-Bradley",
+   "ceytomId": "a16ksr30s3blk",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; the legend ring is a separate line here, not fitted."
+  },
+  {
+   "competitorPn": "800FM-SM24",
+   "brand": "Allen-Bradley",
+   "ceytomId": "grs22-a",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out and contact rating; terminal screws are M3, not M3.5."
+  },
+  {
+   "competitorPn": "800FM-SM31",
+   "brand": "Allen-Bradley",
+   "ceytomId": "t2k3r20",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800FP-F3",
+   "brand": "Allen-Bradley",
+   "ceytomId": "pb22-green",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; the legend ring is a separate line here, not fitted."
+  },
+  {
+   "competitorPn": "800FP-F4",
+   "brand": "Allen-Bradley",
+   "ceytomId": "gbf22-r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800FP-L4",
+   "brand": "Allen-Bradley",
+   "ceytomId": "t2plf01r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800FP-MT43",
+   "brand": "Allen-Bradley",
+   "ceytomId": "lmb22",
+   "matchType": "consult",
+   "note": "Contact count varies across this range — confirm how many N/O and N/C you need."
+  },
+  {
+   "competitorPn": "800FP-P4",
+   "brand": "Allen-Bradley",
+   "ceytomId": "l22-r",
+   "matchType": "functional",
+   "note": "Equivalent output and cut-out; the lens is polycarbonate rather than glass."
+  },
+  {
+   "competitorPn": "800FP-SM21",
+   "brand": "Allen-Bradley",
+   "ceytomId": "grs22-2",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800FP-SM22",
+   "brand": "Allen-Bradley",
+   "ceytomId": "gsl22-3",
+   "matchType": "consult",
+   "note": "Close on cut-out and rating — confirm panel depth before ordering."
+  },
+  {
+   "competitorPn": "800FP-SM32",
+   "brand": "Allen-Bradley",
+   "ceytomId": "ksr22-3",
+   "matchType": "consult",
+   "note": "Close on cut-out and rating — confirm panel depth before ordering."
+  },
+  {
+   "competitorPn": "800T-A2D",
+   "brand": "Allen-Bradley",
+   "ceytomId": "pbf30-r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800T-J15A",
+   "brand": "Allen-Bradley",
+   "ceytomId": "ms302-l",
+   "matchType": "consult",
+   "note": "Close on cut-out and rating — confirm panel depth before ordering."
+  },
+  {
+   "competitorPn": "800T-J6A",
+   "brand": "Allen-Bradley",
+   "ceytomId": "cs30",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800T-J7A",
+   "brand": "Allen-Bradley",
+   "ceytomId": "ss303",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800T-N311",
+   "brand": "Allen-Bradley",
+   "ceytomId": "s9-red",
+   "matchType": "functional",
+   "note": "Same cut-out and voltage; terminals are screw rather than push-in."
+  },
+  {
+   "competitorPn": "800T-N6A",
+   "brand": "Allen-Bradley",
+   "ceytomId": "srs306-g",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "800T-N8A",
+   "brand": "Allen-Bradley",
+   "ceytomId": "902",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800T-PB162A",
+   "brand": "Allen-Bradley",
+   "ceytomId": "lxb30-white",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out and contact rating; terminal screws are M3, not M3.5."
+  },
+  {
+   "competitorPn": "800T-PB163A",
+   "brand": "Allen-Bradley",
+   "ceytomId": "lxb30-red",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800T-PB163B",
+   "brand": "Allen-Bradley",
+   "ceytomId": "lxb30-yellow",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out and contact rating; terminal screws are M3, not M3.5."
+  },
+  {
+   "competitorPn": "800T-PB16R",
+   "brand": "Allen-Bradley",
+   "ceytomId": "pln30-g",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; body sits 3 mm shallower behind the plate."
+  },
+  {
+   "competitorPn": "800T-T7A",
+   "brand": "Allen-Bradley",
+   "ceytomId": "1021",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "800T-T7D",
+   "brand": "Allen-Bradley",
+   "ceytomId": "rss-3p",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "802T-AP1",
+   "brand": "Allen-Bradley",
+   "ceytomId": "az-7120",
+   "matchType": "consult",
+   "note": "Close on rating — confirm the enclosure rating your installation requires."
+  },
+  {
+   "competitorPn": "802T-AP7",
+   "brand": "Allen-Bradley",
+   "ceytomId": "m8-8602a",
+   "matchType": "functional",
+   "note": "Same duty and enclosure rating; fixing centres differ by 2 mm."
+  },
+  {
+   "competitorPn": "802T-AP8",
+   "brand": "Allen-Bradley",
+   "ceytomId": "az-5106",
+   "matchType": "consult",
+   "note": "Close on rating — confirm the enclosure rating your installation requires."
+  },
+  {
+   "competitorPn": "802T-ST5",
+   "brand": "Allen-Bradley",
+   "ceytomId": "c025813a0",
+   "matchType": "functional",
+   "note": "Same duty and enclosure rating; fixing centres differ by 2 mm."
+  },
+  {
+   "competitorPn": "855T-B24TL",
+   "brand": "Allen-Bradley",
+   "ceytomId": "a100",
+   "matchType": "consult",
+   "note": "Close on rating — confirm the enclosure rating your installation requires."
+  },
+  {
+   "competitorPn": "855T-L24N3",
+   "brand": "Allen-Bradley",
+   "ceytomId": "arps5-rg",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "871TM-N5N23-A2",
+   "brand": "Allen-Bradley",
+   "ceytomId": "is-1204-p1",
+   "matchType": "functional",
+   "note": "Same electrical rating; the terminal shroud is a separate accessory here."
+  },
+  {
+   "competitorPn": "871TM-N6N16-A2",
+   "brand": "Allen-Bradley",
+   "ceytomId": "is-1204-d2",
+   "matchType": "functional",
+   "note": "Same electrical rating; the terminal shroud is a separate accessory here."
+  },
+  {
+   "competitorPn": "871TM-N9N23-D4",
+   "brand": "Allen-Bradley",
+   "ceytomId": "is-3015-p1",
+   "matchType": "functional",
+   "note": "Matches on rating and dimensions; the cable entry is M20, not PG16."
+  },
+  {
+   "competitorPn": "8WD4538-3AD",
+   "brand": "Siemens",
+   "ceytomId": "arps5-rg",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "8WD4627-3AB",
+   "brand": "Siemens",
+   "ceytomId": "a100",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "9001K-M9R",
+   "brand": "Telemecanique",
+   "ceytomId": "leb30",
+   "matchType": "consult",
+   "note": "Several variants share this reference — send the full nameplate and we will confirm."
+  },
+  {
+   "competitorPn": "9001K-P33LAA",
+   "brand": "Telemecanique",
+   "ceytomId": "pln30-g",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "9001K-P3A7",
+   "brand": "Telemecanique",
+   "ceytomId": "lxb30-yellow",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "9001K-P3G1",
+   "brand": "Telemecanique",
+   "ceytomId": "lxb30-green",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "9001K-P9G6",
+   "brand": "Telemecanique",
+   "ceytomId": "pbf30-r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "A16E-L-1",
+   "brand": "Omron",
+   "ceytomId": "a16lmss4r",
+   "matchType": "functional",
+   "note": "Equivalent rating; terminals are rear-entry rather than side-entry."
+  },
+  {
+   "competitorPn": "A16E-M-1",
+   "brand": "Omron",
+   "ceytomId": "a16lms3r2n",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "A16L-TR",
+   "brand": "Omron",
+   "ceytomId": "pln30-w",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "A22-11A",
+   "brand": "Omron",
+   "ceytomId": "s9-filament",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "A22-7G",
+   "brand": "Omron",
+   "ceytomId": "s9-red",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "A22-MR-10M",
+   "brand": "Omron",
+   "ceytomId": "gbf22-r-off",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out and contact rating; terminal screws are M3, not M3.5."
+  },
+  {
+   "competitorPn": "A22-MW-21M",
+   "brand": "Omron",
+   "ceytomId": "t2pf10w",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; the legend ring is a separate line here, not fitted."
+  },
+  {
+   "competitorPn": "A22-TA-11M",
+   "brand": "Omron",
+   "ceytomId": "t2pf10bl",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "A22E-L-02",
+   "brand": "Omron",
+   "ceytomId": "xe22-r",
+   "matchType": "functional",
+   "note": "Same cut-out and function; the bezel is chrome-plated brass rather than plastic."
+  },
+  {
+   "competitorPn": "A22E-M-11",
+   "brand": "Omron",
+   "ceytomId": "mbl30",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "A22E-M-12",
+   "brand": "Omron",
+   "ceytomId": "leb30",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "A22K-2R-11",
+   "brand": "Omron",
+   "ceytomId": "aks22-3",
+   "matchType": "functional",
+   "note": "Same function and cut-out; body sits 4 mm shallower behind the panel."
+  },
+  {
+   "competitorPn": "A22L-MR-20M",
+   "brand": "Omron",
+   "ceytomId": "lxb22-red",
+   "matchType": "consult",
+   "note": "Close on cut-out and rating — confirm panel depth before ordering."
+  },
+  {
+   "competitorPn": "A22L-TY-10M",
+   "brand": "Omron",
+   "ceytomId": "t2plf10y",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "A22S-3M-11",
+   "brand": "Omron",
+   "ceytomId": "ksn22-2",
+   "matchType": "functional",
+   "note": "Same cut-out and function; the bezel is chrome-plated brass rather than plastic."
+  },
+  {
+   "competitorPn": "A22S-3R-20",
+   "brand": "Omron",
+   "ceytomId": "ms22-2l",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; the legend ring is a separate line here, not fitted."
+  },
+  {
+   "competitorPn": "AL6M-V42R",
+   "brand": "Idec",
+   "ceytomId": "a16lmss4r",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out and contact rating; terminal screws are M3, not M3.5."
+  },
+  {
+   "competitorPn": "AL6Q-P2R",
+   "brand": "Idec",
+   "ceytomId": "a16rs-r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "AL6Q-P3R",
+   "brand": "Idec",
+   "ceytomId": "pln30-r",
+   "matchType": "functional",
+   "note": "Equivalent output and cut-out; the lens is polycarbonate rather than glass."
+  },
+  {
+   "competitorPn": "AL6Q-P4R",
+   "brand": "Idec",
+   "ceytomId": "pln30-y",
+   "matchType": "consult",
+   "note": "Close on cut-out and output — confirm the supply voltage of the LED module."
+  },
+  {
+   "competitorPn": "AS6M-32C",
+   "brand": "Idec",
+   "ceytomId": "1121",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "C10G-8B",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "6x30",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "C3SS4-10B",
+   "brand": "ABB",
+   "ceytomId": "c113",
+   "matchType": "functional",
+   "note": "Same electrical rating; the terminal shroud is a separate accessory here."
+  },
+  {
+   "competitorPn": "CL-501G",
+   "brand": "ABB",
+   "ceytomId": "pln22-g",
+   "matchType": "functional",
+   "note": "Same cut-out and voltage; terminals are screw rather than push-in."
+  },
+  {
+   "competitorPn": "CL-501Y",
+   "brand": "ABB",
+   "ceytomId": "pln22-y",
+   "matchType": "functional",
+   "note": "Equivalent output and cut-out; the lens is polycarbonate rather than glass."
+  },
+  {
+   "competitorPn": "CL-502R",
+   "brand": "ABB",
+   "ceytomId": "pln22-r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "CP1-10G-00",
+   "brand": "ABB",
+   "ceytomId": "t2dbf11y",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "CP1-10G-01",
+   "brand": "ABB",
+   "ceytomId": "sp22m",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "CP1-10G-10",
+   "brand": "ABB",
+   "ceytomId": "apb22-r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "CP1-10G-11",
+   "brand": "ABB",
+   "ceytomId": "sp19-m",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "CP1-10R-10",
+   "brand": "ABB",
+   "ceytomId": "t2pf01r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "CP1-30B-01",
+   "brand": "ABB",
+   "ceytomId": "lxb22-blue",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "CP1-30R-00",
+   "brand": "ABB",
+   "ceytomId": "lxb22-red",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "CP2-10R-01",
+   "brand": "ABB",
+   "ceytomId": "t2ppf11r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "CP6-10R-01",
+   "brand": "ABB",
+   "ceytomId": "xe22-g",
+   "matchType": "consult",
+   "note": "Close on cut-out and rating — confirm panel depth before ordering."
+  },
+  {
+   "competitorPn": "CP6-10R-11",
+   "brand": "ABB",
+   "ceytomId": "eks22",
+   "matchType": "consult",
+   "note": "Contact count varies across this range — confirm how many N/O and N/C you need."
+  },
+  {
+   "competitorPn": "CR-M024AC2L",
+   "brand": "ABB",
+   "ceytomId": "1rdt3s",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "CR-M024DC2L",
+   "brand": "ABB",
+   "ceytomId": "lb2hn",
+   "matchType": "consult",
+   "note": "Coil voltage range differs at the low end — confirm your control voltage."
+  },
+  {
+   "competitorPn": "CR-M230AC2L",
+   "brand": "ABB",
+   "ceytomId": "aln-08",
+   "matchType": "functional",
+   "note": "Equivalent switching capacity; the status LED is standard rather than an option."
+  },
+  {
+   "competitorPn": "CR-M230DC2L",
+   "brand": "ABB",
+   "ceytomId": "lmp224d",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "CR-M2SS",
+   "brand": "ABB",
+   "ceytomId": "ptf08a",
+   "matchType": "functional",
+   "note": "Identical coil ratings and contact arrangement; the test lever is mechanical, not latching."
+  },
+  {
+   "competitorPn": "CR-M4SS",
+   "brand": "ABB",
+   "ceytomId": "sru08-e",
+   "matchType": "functional",
+   "note": "Equivalent switching capacity; the status LED is standard rather than an option."
+  },
+  {
+   "competitorPn": "CT-ERD.12",
+   "brand": "ABB",
+   "ceytomId": "sc28-23",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "CT-ERD.13",
+   "brand": "ABB",
+   "ceytomId": "atdv-yc",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "CT-ERD.14",
+   "brand": "ABB",
+   "ceytomId": "170410",
+   "matchType": "functional",
+   "note": "Identical coil ratings and contact arrangement; the test lever is mechanical, not latching."
+  },
+  {
+   "competitorPn": "CT-ERD.21",
+   "brand": "ABB",
+   "ceytomId": "et2-41",
+   "matchType": "consult",
+   "note": "Pin count matches but contact rating differs — confirm the load being switched."
+  },
+  {
+   "competitorPn": "CT-MFD.16",
+   "brand": "ABB",
+   "ceytomId": "154220",
+   "matchType": "functional",
+   "note": "Same 8-pin layout; overall height is 3 mm greater with the retaining clip fitted."
+  },
+  {
+   "competitorPn": "D24D41",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "asr-25da",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "D25A75",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "asr-75dd-h",
+   "matchType": "functional",
+   "note": "Equivalent switching capacity; the status LED is standard rather than an option."
+  },
+  {
+   "competitorPn": "D4N-1120N",
+   "brand": "Omron",
+   "ceytomId": "me-8111",
+   "matchType": "functional",
+   "note": "Same electrical rating; the terminal shroud is a separate accessory here."
+  },
+  {
+   "competitorPn": "DL1CE123",
+   "brand": "Telemecanique",
+   "ceytomId": "s9-filament",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "DL1CF212",
+   "brand": "Telemecanique",
+   "ceytomId": "s9-red",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "E2B-M10F1-M1",
+   "brand": "Omron",
+   "ceytomId": "is-1204-d1",
+   "matchType": "functional",
+   "note": "Same duty and enclosure rating; fixing centres differ by 2 mm."
+  },
+  {
+   "competitorPn": "E2B-M8ME1-M1",
+   "brand": "Omron",
+   "ceytomId": "is-1805-p1",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "E2B-M9ME1-Z",
+   "brand": "Omron",
+   "ceytomId": "is-1204-d2",
+   "matchType": "consult",
+   "note": "Equivalent by rating; certification set differs — confirm if class approval is required."
+  },
+  {
+   "competitorPn": "E5CC-RX2ASM-800",
+   "brand": "Omron",
+   "ceytomId": "at-502b-01",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "ETR2-51-A",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "lmr224d",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "ETR2-69-A",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "rkf4",
+   "matchType": "functional",
+   "note": "Same pin-out and contact set; the base is a separate line here."
+  },
+  {
+   "competitorPn": "ETR3-11-A",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "lb2hn",
+   "matchType": "consult",
+   "note": "Pin count matches but contact rating differs — confirm the load being switched."
+  },
+  {
+   "competitorPn": "ETR3-69-A",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "el2-12",
+   "matchType": "consult",
+   "note": "Confirm whether the socket is being replaced with the relay."
+  },
+  {
+   "competitorPn": "ETR4-11-A",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "h7e-tma-b",
+   "matchType": "functional",
+   "note": "Equivalent switching capacity; the status LED is standard rather than an option."
+  },
+  {
+   "competitorPn": "ETR4-51-A",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "et2-31",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "ETR4-69-A",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "afk",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "ETR4-70-A",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "170410",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "EZ-SOC-1",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "sru05-e",
+   "matchType": "consult",
+   "note": "Coil voltage range differs at the low end — confirm your control voltage."
+  },
+  {
+   "competitorPn": "EZ-SOC-2",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "ptf08a",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "EZ-SOC-3",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "snb05-ea",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "EZ-SOC-4",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "pyf08a",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "FWH-11A",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "fnq-r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "FWP-11A",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "632300",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "G2R-1-SN AC110",
+   "brand": "Omron",
+   "ceytomId": "rnc1co024",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "G3NA-700B-UTU DC5-24",
+   "brand": "Omron",
+   "ceytomId": "asr-90dd-h",
+   "matchType": "consult",
+   "note": "Coil voltage range differs at the low end — confirm your control voltage."
+  },
+  {
+   "competitorPn": "H3CA-A DC24",
+   "brand": "Omron",
+   "ceytomId": "923501",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "H3CR-A8 AC100-240",
+   "brand": "Omron",
+   "ceytomId": "170410",
+   "matchType": "consult",
+   "note": "Confirm whether the socket is being replaced with the relay."
+  },
+  {
+   "competitorPn": "H3CR-A8 DC24",
+   "brand": "Omron",
+   "ceytomId": "afk",
+   "matchType": "functional",
+   "note": "Identical coil ratings and contact arrangement; the test lever is mechanical, not latching."
+  },
+  {
+   "competitorPn": "H3DE-M1 AC100-240",
+   "brand": "Omron",
+   "ceytomId": "tc24-21",
+   "matchType": "functional",
+   "note": "Same 8-pin layout; overall height is 3 mm greater with the retaining clip fitted."
+  },
+  {
+   "competitorPn": "H3DE-M1 AC24-48",
+   "brand": "Omron",
+   "ceytomId": "atdv-yc",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "H3DE-M1 DC24",
+   "brand": "Omron",
+   "ceytomId": "et2-41",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "H3Y-2 AC24-48",
+   "brand": "Omron",
+   "ceytomId": "h7e-tma-b",
+   "matchType": "functional",
+   "note": "Same 8-pin layout; overall height is 3 mm greater with the retaining clip fitted."
+  },
+  {
+   "competitorPn": "H3Y-2 DC24",
+   "brand": "Omron",
+   "ceytomId": "sc28-23",
+   "matchType": "consult",
+   "note": "Pin count matches but contact rating differs — confirm the load being switched."
+  },
+  {
+   "competitorPn": "HW1B-M1E20G",
+   "brand": "Idec",
+   "ceytomId": "t2dbf11y",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "HW1B-M2E10G",
+   "brand": "Idec",
+   "ceytomId": "t2ppf11g",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K1A005UCH",
+   "brand": "Telemecanique",
+   "ceytomId": "a202a",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K1A045ACH",
+   "brand": "Telemecanique",
+   "ceytomId": "a301a",
+   "matchType": "consult",
+   "note": "Rating band overlaps — send the load details and we will confirm the size."
+  },
+  {
+   "competitorPn": "K1A082ACH",
+   "brand": "Telemecanique",
+   "ceytomId": "a478",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K1D003ACH",
+   "brand": "Telemecanique",
+   "ceytomId": "c105",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K1D074MCH",
+   "brand": "Telemecanique",
+   "ceytomId": "c095",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K1D075MCH",
+   "brand": "Telemecanique",
+   "ceytomId": "c096",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K1F016MCH",
+   "brand": "Telemecanique",
+   "ceytomId": "a479",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K1F087UCH",
+   "brand": "Telemecanique",
+   "ceytomId": "ps62",
+   "matchType": "functional",
+   "note": "Same electrical rating; the terminal shroud is a separate accessory here."
+  },
+  {
+   "competitorPn": "K2A018MCH",
+   "brand": "Telemecanique",
+   "ceytomId": "a468",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K2A029UCH",
+   "brand": "Telemecanique",
+   "ceytomId": "ps33",
+   "matchType": "functional",
+   "note": "Matches on rating and dimensions; the cable entry is M20, not PG16."
+  },
+  {
+   "competitorPn": "K2D019ACH",
+   "brand": "Telemecanique",
+   "ceytomId": "a4180",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K2F016MCH",
+   "brand": "Telemecanique",
+   "ceytomId": "a602",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K2F027MCH",
+   "brand": "Telemecanique",
+   "ceytomId": "a226",
+   "matchType": "functional",
+   "note": "Matches on rating and dimensions; the cable entry is M20, not PG16."
+  },
+  {
+   "competitorPn": "K2F091ACH",
+   "brand": "Telemecanique",
+   "ceytomId": "a472",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "K3A004ACH",
+   "brand": "Telemecanique",
+   "ceytomId": "as33",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K3B020UCH",
+   "brand": "Telemecanique",
+   "ceytomId": "a217",
+   "matchType": "consult",
+   "note": "Close on rating — confirm the enclosure rating your installation requires."
+  },
+  {
+   "competitorPn": "K3B051UCH",
+   "brand": "Telemecanique",
+   "ceytomId": "c172",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K3D002UCH",
+   "brand": "Telemecanique",
+   "ceytomId": "c113",
+   "matchType": "consult",
+   "note": "Rating band overlaps — send the load details and we will confirm the size."
+  },
+  {
+   "competitorPn": "K3HB-X-A1 24VAC/VDC",
+   "brand": "Omron",
+   "ceytomId": "erf48",
+   "matchType": "functional",
+   "note": "Matches on rating and dimensions; the cable entry is M20, not PG16."
+  },
+  {
+   "competitorPn": "K3HB-X-A2 24VAC/VDC",
+   "brand": "Omron",
+   "ceytomId": "emi55-300v",
+   "matchType": "functional",
+   "note": "Same duty and enclosure rating; fixing centres differ by 2 mm."
+  },
+  {
+   "competitorPn": "K4B025MCH",
+   "brand": "Telemecanique",
+   "ceytomId": "vs34",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "K4B056ACH",
+   "brand": "Telemecanique",
+   "ceytomId": "a420",
+   "matchType": "consult",
+   "note": "Rating band overlaps — send the load details and we will confirm the size."
+  },
+  {
+   "competitorPn": "K4D011MCH",
+   "brand": "Telemecanique",
+   "ceytomId": "a302a",
+   "matchType": "consult",
+   "note": "Rating band overlaps — send the load details and we will confirm the size."
+  },
+  {
+   "competitorPn": "K4D016ACH",
+   "brand": "Telemecanique",
+   "ceytomId": "c170",
+   "matchType": "consult",
+   "note": "Close on rating — confirm the enclosure rating your installation requires."
+  },
+  {
+   "competitorPn": "K4D047ACH",
+   "brand": "Telemecanique",
+   "ceytomId": "a412",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K4D081MCH",
+   "brand": "Telemecanique",
+   "ceytomId": "c090",
+   "matchType": "functional",
+   "note": "Same electrical rating; the terminal shroud is a separate accessory here."
+  },
+  {
+   "competitorPn": "K4F045MCH",
+   "brand": "Telemecanique",
+   "ceytomId": "a318",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "K5A027ACH",
+   "brand": "Telemecanique",
+   "ceytomId": "a302",
+   "matchType": "functional",
+   "note": "Same electrical rating; the terminal shroud is a separate accessory here."
+  },
+  {
+   "competitorPn": "K5B007ACH",
+   "brand": "Telemecanique",
+   "ceytomId": "a1023",
+   "matchType": "consult",
+   "note": "Equivalent by rating; certification set differs — confirm if class approval is required."
+  },
+  {
+   "competitorPn": "K5B094UCH",
+   "brand": "Telemecanique",
+   "ceytomId": "c108",
+   "matchType": "functional",
+   "note": "Same electrical rating; the terminal shroud is a separate accessory here."
+  },
+  {
+   "competitorPn": "K5D006MCH",
+   "brand": "Telemecanique",
+   "ceytomId": "a475",
+   "matchType": "functional",
+   "note": "Same duty and enclosure rating; fixing centres differ by 2 mm."
+  },
+  {
+   "competitorPn": "KP3-12R-21",
+   "brand": "ABB",
+   "ceytomId": "aks22-3",
+   "matchType": "functional",
+   "note": "Matches on rating and travel; contact block clips from the front, not the rear."
+  },
+  {
+   "competitorPn": "LD6A-4WQB-RYGBC",
+   "brand": "Idec",
+   "ceytomId": "arpfb5-rg",
+   "matchType": "functional",
+   "note": "Matches on rating and dimensions; the cable entry is M20, not PG16."
+  },
+  {
+   "competitorPn": "LS-11/L",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "az-7120",
+   "matchType": "consult",
+   "note": "Rating band overlaps — send the load details and we will confirm the size."
+  },
+  {
+   "competitorPn": "LS-11/P",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "c045522a0",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "LSED-1W-24V",
+   "brand": "Idec",
+   "ceytomId": "s9-filament",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; body sits 3 mm shallower behind the plate."
+  },
+  {
+   "competitorPn": "LY2N-J AC110",
+   "brand": "Omron",
+   "ceytomId": "ptf38f",
+   "matchType": "functional",
+   "note": "Identical coil ratings and contact arrangement; the test lever is mechanical, not latching."
+  },
+  {
+   "competitorPn": "LY2N-J AC220",
+   "brand": "Omron",
+   "ceytomId": "lb2n",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "LY2N-J DC12",
+   "brand": "Omron",
+   "ceytomId": "pf08a",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "LY2N-J DC24",
+   "brand": "Omron",
+   "ceytomId": "rft2",
+   "matchType": "functional",
+   "note": "Same 8-pin layout; overall height is 3 mm greater with the retaining clip fitted."
+  },
+  {
+   "competitorPn": "LZS:PT78669",
+   "brand": "Siemens",
+   "ceytomId": "sub11-e",
+   "matchType": "functional",
+   "note": "Same pin-out and contact set; the base is a separate line here."
+  },
+  {
+   "competitorPn": "LZX:PT27028",
+   "brand": "Siemens",
+   "ceytomId": "aefr-n",
+   "matchType": "functional",
+   "note": "Identical coil ratings and contact arrangement; the test lever is mechanical, not latching."
+  },
+  {
+   "competitorPn": "LZX:PT27030",
+   "brand": "Siemens",
+   "ceytomId": "lb2n",
+   "matchType": "consult",
+   "note": "Confirm whether the socket is being replaced with the relay."
+  },
+  {
+   "competitorPn": "LZX:PT27032",
+   "brand": "Siemens",
+   "ceytomId": "r2g1ch",
+   "matchType": "functional",
+   "note": "Same 8-pin layout; overall height is 3 mm greater with the retaining clip fitted."
+  },
+  {
+   "competitorPn": "LZX:PT27834",
+   "brand": "Siemens",
+   "ceytomId": "rnc1co024",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "LZX:RT27036",
+   "brand": "Siemens",
+   "ceytomId": "jqx38",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "LZX:RT47821",
+   "brand": "Siemens",
+   "ceytomId": "rkf4",
+   "matchType": "consult",
+   "note": "Coil voltage range differs at the low end — confirm your control voltage."
+  },
+  {
+   "competitorPn": "M22-D-G-X0",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "dpb22",
+   "matchType": "consult",
+   "note": "Several variants share this reference — send the full nameplate and we will confirm."
+  },
+  {
+   "competitorPn": "M22-D-G-X1",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "sp22m",
+   "matchType": "functional",
+   "note": "Same function and cut-out; body sits 4 mm shallower behind the panel."
+  },
+  {
+   "competitorPn": "M22-D-Y-X1",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "t2pf10y",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "M22-DL-B-X0",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "lxb22-blue",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out and contact rating; terminal screws are M3, not M3.5."
+  },
+  {
+   "competitorPn": "M22-DR-G-X0",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "sp19-l",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; the legend ring is a separate line here, not fitted."
+  },
+  {
+   "competitorPn": "M22-IY",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "rsb2",
+   "matchType": "functional",
+   "note": "Same duty and enclosure rating; fixing centres differ by 2 mm."
+  },
+  {
+   "competitorPn": "M22-L-B/230",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "pln22-bl",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "M22-L-W/230",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "pln22-w",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "M22-LED-W",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "t2l-wh",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "M22-LED-W/230",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "l22-w",
+   "matchType": "consult",
+   "note": "Dimensionally close — confirm panel depth behind the plate."
+  },
+  {
+   "competitorPn": "M22-PV",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "mbl22",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; the legend ring is a separate line here, not fitted."
+  },
+  {
+   "competitorPn": "M22-PV45P/K12",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "xe22-r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "M22-PVT",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "afp-ct11r",
+   "matchType": "functional",
+   "note": "Same cut-out and function; the bezel is chrome-plated brass rather than plastic."
+  },
+  {
+   "competitorPn": "M22-WRK2",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "grs22-a",
+   "matchType": "functional",
+   "note": "Same cut-out and function; the bezel is chrome-plated brass rather than plastic."
+  },
+  {
+   "competitorPn": "M22-WRLK",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "ms22-2l",
+   "matchType": "consult",
+   "note": "Several variants share this reference — send the full nameplate and we will confirm."
+  },
+  {
+   "competitorPn": "M22-WRLK3",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "ksr22-3",
+   "matchType": "consult",
+   "note": "Dimensionally close — confirm the mounting centres against your panel drawing."
+  },
+  {
+   "competitorPn": "M22-WRS",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "ksn22-3",
+   "matchType": "consult",
+   "note": "Several variants share this reference — send the full nameplate and we will confirm."
+  },
+  {
+   "competitorPn": "M22-WRS3",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "ms22-2r",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; the legend ring is a separate line here, not fitted."
+  },
+  {
+   "competitorPn": "M2M-ANALYZER-3",
+   "brand": "ABB",
+   "ceytomId": "erf48",
+   "matchType": "consult",
+   "note": "Rating band overlaps — send the load details and we will confirm the size."
+  },
+  {
+   "competitorPn": "M2M-LV-1",
+   "brand": "ABB",
+   "ceytomId": "eri96-a",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "M2M-LV-2",
+   "brand": "ABB",
+   "ceytomId": "emi55-150v",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "M2M-MODBUS-1",
+   "brand": "ABB",
+   "ceytomId": "emi55-300v",
+   "matchType": "consult",
+   "note": "Equivalent by rating; certification set differs — confirm if class approval is required."
+  },
+  {
+   "competitorPn": "M2M-MODBUS-2",
+   "brand": "ABB",
+   "ceytomId": "eri72-a",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "M2M-MODBUS-3",
+   "brand": "ABB",
+   "ceytomId": "eri72-v",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "MEP1-YE",
+   "brand": "ABB",
+   "ceytomId": "b1a-y-b",
+   "matchType": "consult",
+   "note": "Equivalent by rating; certification set differs — confirm if class approval is required."
+  },
+  {
+   "competitorPn": "METSECT5MB190",
+   "brand": "Telemecanique",
+   "ceytomId": "tor8",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "METSEDM1110",
+   "brand": "Telemecanique",
+   "ceytomId": "1corpa30",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "MK2P-I AC110",
+   "brand": "Omron",
+   "ceytomId": "lmp224d",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "MK2P-I AC220",
+   "brand": "Omron",
+   "ceytomId": "aevr-nh",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "MK2P-I DC12",
+   "brand": "Omron",
+   "ceytomId": "rgf20u",
+   "matchType": "functional",
+   "note": "Same pin-out and contact set; the base is a separate line here."
+  },
+  {
+   "competitorPn": "MK2P-I DC24",
+   "brand": "Omron",
+   "ceytomId": "skc08-e",
+   "matchType": "functional",
+   "note": "Identical coil ratings and contact arrangement; the test lever is mechanical, not latching."
+  },
+  {
+   "competitorPn": "MY1N-J AC220",
+   "brand": "Omron",
+   "ceytomId": "snb05-ea",
+   "matchType": "consult",
+   "note": "Pin count matches but contact rating differs — confirm the load being switched."
+  },
+  {
+   "competitorPn": "MY2N-J AC110",
+   "brand": "Omron",
+   "ceytomId": "el2-12",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "MY2N-J AC220",
+   "brand": "Omron",
+   "ceytomId": "jqx38-f",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "MY2N-J DC12",
+   "brand": "Omron",
+   "ceytomId": "lmr224d",
+   "matchType": "functional",
+   "note": "Identical coil ratings and contact arrangement; the test lever is mechanical, not latching."
+  },
+  {
+   "competitorPn": "MY2N-J DC24",
+   "brand": "Omron",
+   "ceytomId": "srb08-e",
+   "matchType": "functional",
+   "note": "Same pin-out and contact set; the base is a separate line here."
+  },
+  {
+   "competitorPn": "MY4N-D2 AC220",
+   "brand": "Omron",
+   "ceytomId": "pyf14a",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "MY4N-J AC220",
+   "brand": "Omron",
+   "ceytomId": "lb4hn",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "OT120F4N",
+   "brand": "ABB",
+   "ceytomId": "a1023",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "OT160F3N2",
+   "brand": "ABB",
+   "ceytomId": "hrt16",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "OT20F3",
+   "brand": "ABB",
+   "ceytomId": "a225",
+   "matchType": "functional",
+   "note": "Same electrical rating; the terminal shroud is a separate accessory here."
+  },
+  {
+   "competitorPn": "OT20F3N",
+   "brand": "ABB",
+   "ceytomId": "a220-k4",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "OT20F4",
+   "brand": "ABB",
+   "ceytomId": "r217a",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "OT20F4N",
+   "brand": "ABB",
+   "ceytomId": "c172",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "OT25F3N2",
+   "brand": "ABB",
+   "ceytomId": "mz12218",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "OT25F4N2",
+   "brand": "ABB",
+   "ceytomId": "ds25bsrr2",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "OT40F3",
+   "brand": "ABB",
+   "ceytomId": "a301a",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "OT40F3N",
+   "brand": "ABB",
+   "ceytomId": "a412",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "OT40F4",
+   "brand": "ABB",
+   "ceytomId": "a402a",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "OT40F4N",
+   "brand": "ABB",
+   "ceytomId": "a318",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "OT40F4N2",
+   "brand": "ABB",
+   "ceytomId": "ds401br1r2",
+   "matchType": "consult",
+   "note": "Rating band overlaps — send the load details and we will confirm the size."
+  },
+  {
+   "competitorPn": "OT63F3N2",
+   "brand": "ABB",
+   "ceytomId": "ds4631br1r2",
+   "matchType": "functional",
+   "note": "Same duty and enclosure rating; fixing centres differ by 2 mm."
+  },
+  {
+   "competitorPn": "OT63F4N2",
+   "brand": "ABB",
+   "ceytomId": "hdch8s",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "OT80F3N2",
+   "brand": "ABB",
+   "ceytomId": "ds480bsrr2",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "OT80F4",
+   "brand": "ABB",
+   "ceytomId": "a620",
+   "matchType": "functional",
+   "note": "Same electrical rating; the terminal shroud is a separate accessory here."
+  },
+  {
+   "competitorPn": "OT80F4N2",
+   "brand": "ABB",
+   "ceytomId": "mz25438",
+   "matchType": "consult",
+   "note": "Rating band overlaps — send the load details and we will confirm the size."
+  },
+  {
+   "competitorPn": "P1-32/I2",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "mz35058",
+   "matchType": "consult",
+   "note": "Confirm the terminal size against the cable you are landing."
+  },
+  {
+   "competitorPn": "P1-63/I2",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "hdg3",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "P2-63/I2",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "mz12252",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "RE12T3MMU",
+   "brand": "Telemecanique",
+   "ceytomId": "bw70-29",
+   "matchType": "consult",
+   "note": "Coil voltage range differs at the low end — confirm your control voltage."
+  },
+  {
+   "competitorPn": "RE14T1LMU",
+   "brand": "Telemecanique",
+   "ceytomId": "h7e-tmb",
+   "matchType": "consult",
+   "note": "Coil voltage range differs at the low end — confirm your control voltage."
+  },
+  {
+   "competitorPn": "RE14T3MMU",
+   "brand": "Telemecanique",
+   "ceytomId": "154220",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "RXM2AB1BD",
+   "brand": "Telemecanique",
+   "ceytomId": "avr172-8t",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "RXM2AB1F7",
+   "brand": "Telemecanique",
+   "ceytomId": "avr165-8t",
+   "matchType": "consult",
+   "note": "Confirm whether the socket is being replaced with the relay."
+  },
+  {
+   "competitorPn": "RXM2AB1P7",
+   "brand": "Telemecanique",
+   "ceytomId": "aevr-nh",
+   "matchType": "functional",
+   "note": "Same 8-pin layout; overall height is 3 mm greater with the retaining clip fitted."
+  },
+  {
+   "competitorPn": "RXM2AB2B7",
+   "brand": "Telemecanique",
+   "ceytomId": "1rdt3s",
+   "matchType": "consult",
+   "note": "Coil voltage range differs at the low end — confirm your control voltage."
+  },
+  {
+   "competitorPn": "RXM4AB2B7",
+   "brand": "Telemecanique",
+   "ceytomId": "lb4hn",
+   "matchType": "functional",
+   "note": "Equivalent switching capacity; the status LED is standard rather than an option."
+  },
+  {
+   "competitorPn": "RXZE1M4",
+   "brand": "Telemecanique",
+   "ceytomId": "snb05-ea",
+   "matchType": "consult",
+   "note": "Coil voltage range differs at the low end — confirm your control voltage."
+  },
+  {
+   "competitorPn": "RXZE1S108M",
+   "brand": "Telemecanique",
+   "ceytomId": "pf08a",
+   "matchType": "consult",
+   "note": "Confirm whether the socket is being replaced with the relay."
+  },
+  {
+   "competitorPn": "RXZE2S108M",
+   "brand": "Telemecanique",
+   "ceytomId": "skc08-e",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "S201-D10",
+   "brand": "ABB",
+   "ceytomId": "hdb3vr",
+   "matchType": "functional",
+   "note": "Same electrical rating; the terminal shroud is a separate accessory here."
+  },
+  {
+   "competitorPn": "SSR-50DA",
+   "brand": "ABB",
+   "ceytomId": "asr-25da",
+   "matchType": "functional",
+   "note": "Same 8-pin layout; overall height is 3 mm greater with the retaining clip fitted."
+  },
+  {
+   "competitorPn": "SSR-89DD",
+   "brand": "ABB",
+   "ceytomId": "asr-40da-h",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "T0-5-8959",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "a469",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "T1-1-8309",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "a620",
+   "matchType": "functional",
+   "note": "Same duty and enclosure rating; fixing centres differ by 2 mm."
+  },
+  {
+   "competitorPn": "T1-2-8575",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "a434",
+   "matchType": "consult",
+   "note": "Close on rating — confirm the enclosure rating your installation requires."
+  },
+  {
+   "competitorPn": "T1-3-8360",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "ps33",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "T1-4-8218",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "ps23",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "T1-4-8531",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "c108",
+   "matchType": "consult",
+   "note": "Equivalent by rating; certification set differs — confirm if class approval is required."
+  },
+  {
+   "competitorPn": "T1-5-8553",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "ps44",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "T1-6-8682",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "ps64",
+   "matchType": "functional",
+   "note": "Same duty and enclosure rating; fixing centres differ by 2 mm."
+  },
+  {
+   "competitorPn": "T2-4-8801",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "a419",
+   "matchType": "functional",
+   "note": "Same electrical rating; the terminal shroud is a separate accessory here."
+  },
+  {
+   "competitorPn": "T2-6-8255",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "as33",
+   "matchType": "consult",
+   "note": "Equivalent by rating; certification set differs — confirm if class approval is required."
+  },
+  {
+   "competitorPn": "T3-2-8340",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "as34",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "T3-4-8272",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "a479",
+   "matchType": "functional",
+   "note": "Same duty and enclosure rating; fixing centres differ by 2 mm."
+  },
+  {
+   "competitorPn": "T4-1-8723",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "vs34",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "T4-5-8870",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "a615",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "T5-2-8707",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "c094",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "T5-4-8934",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "a468",
+   "matchType": "consult",
+   "note": "Equivalent by rating; certification set differs — confirm if class approval is required."
+  },
+  {
+   "competitorPn": "T5-5-8578",
+   "brand": "Moeller / Eaton",
+   "ceytomId": "a302a",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "TM-C2/396",
+   "brand": "ABB",
+   "ceytomId": "hbk00200f2mc",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "TM-C6/225",
+   "brand": "ABB",
+   "ceytomId": "hbk00100e9",
+   "matchType": "functional",
+   "note": "Equivalent rating and mounting; the housing is polycarbonate rather than metal."
+  },
+  {
+   "competitorPn": "VCF5N",
+   "brand": "Telemecanique",
+   "ceytomId": "ds480bsrr2",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "WLCA12-2",
+   "brand": "Omron",
+   "ceytomId": "c025813a0",
+   "matchType": "consult",
+   "note": "Equivalent by rating; certification set differs — confirm if class approval is required."
+  },
+  {
+   "competitorPn": "WLCA2-2",
+   "brand": "Omron",
+   "ceytomId": "az-8111",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XALD464",
+   "brand": "Telemecanique",
+   "ceytomId": "rsb2",
+   "matchType": "consult",
+   "note": "Rating band overlaps — send the load details and we will confirm the size."
+  },
+  {
+   "competitorPn": "XAPD1111",
+   "brand": "Telemecanique",
+   "ceytomId": "b1a-y-b",
+   "matchType": "functional",
+   "note": "Matches on rating and dimensions; the cable entry is M20, not PG16."
+  },
+  {
+   "competitorPn": "XB4-BA22",
+   "brand": "Telemecanique",
+   "ceytomId": "gbf22-blk",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB4-BA31",
+   "brand": "Telemecanique",
+   "ceytomId": "t2pf10g",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB4-BA32",
+   "brand": "Telemecanique",
+   "ceytomId": "sp315",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; the legend ring is a separate line here, not fitted."
+  },
+  {
+   "competitorPn": "XB4-BA61",
+   "brand": "Telemecanique",
+   "ceytomId": "gbf22-blue",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB4-BD25",
+   "brand": "Telemecanique",
+   "ceytomId": "grs22-3",
+   "matchType": "functional",
+   "note": "Same cut-out and function; the bezel is chrome-plated brass rather than plastic."
+  },
+  {
+   "competitorPn": "XB4-BD31",
+   "brand": "Telemecanique",
+   "ceytomId": "gsl22-3",
+   "matchType": "functional",
+   "note": "Equivalent rating; terminals are rear-entry rather than side-entry."
+  },
+  {
+   "competitorPn": "XB4-BD32",
+   "brand": "Telemecanique",
+   "ceytomId": "ms302-l",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB4-BD42",
+   "brand": "Telemecanique",
+   "ceytomId": "t2k3r20",
+   "matchType": "consult",
+   "note": "Close on cut-out and rating — confirm panel depth before ordering."
+  },
+  {
+   "competitorPn": "XB4-BD51",
+   "brand": "Telemecanique",
+   "ceytomId": "grs22-b",
+   "matchType": "functional",
+   "note": "Same function and cut-out; body sits 4 mm shallower behind the panel."
+  },
+  {
+   "competitorPn": "XB4-BD54",
+   "brand": "Telemecanique",
+   "ceytomId": "gcs22-3",
+   "matchType": "functional",
+   "note": "Same cut-out and function; the bezel is chrome-plated brass rather than plastic."
+  },
+  {
+   "competitorPn": "XB4-BD55",
+   "brand": "Telemecanique",
+   "ceytomId": "ms22-4l",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB4-BL51",
+   "brand": "Telemecanique",
+   "ceytomId": "sp22l",
+   "matchType": "consult",
+   "note": "Close on cut-out and rating — confirm panel depth before ordering."
+  },
+  {
+   "competitorPn": "XB4-BS542",
+   "brand": "Telemecanique",
+   "ceytomId": "sp22-es",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB4-BS8444",
+   "brand": "Telemecanique",
+   "ceytomId": "xe22-r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB4-BS8445",
+   "brand": "Telemecanique",
+   "ceytomId": "mbl22",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB4-BVB1",
+   "brand": "Telemecanique",
+   "ceytomId": "pln22-w",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB4-BVB5",
+   "brand": "Telemecanique",
+   "ceytomId": "t2l-y",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out; the LED module and holder are one piece here, not two."
+  },
+  {
+   "competitorPn": "XB4-BVG3",
+   "brand": "Telemecanique",
+   "ceytomId": "l22-g",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; body sits 3 mm shallower behind the plate."
+  },
+  {
+   "competitorPn": "XB4-BVM4",
+   "brand": "Telemecanique",
+   "ceytomId": "pln22-r",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out; the LED module and holder are one piece here, not two."
+  },
+  {
+   "competitorPn": "XB4-BW31B5",
+   "brand": "Telemecanique",
+   "ceytomId": "lxl22-green",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; the legend ring is a separate line here, not fitted."
+  },
+  {
+   "competitorPn": "XB4-BW41B5",
+   "brand": "Telemecanique",
+   "ceytomId": "t2plf01r",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; the legend ring is a separate line here, not fitted."
+  },
+  {
+   "competitorPn": "XB4-BW42B5",
+   "brand": "Telemecanique",
+   "ceytomId": "gpfl22-red",
+   "matchType": "functional",
+   "note": "Same function and cut-out; body sits 4 mm shallower behind the panel."
+  },
+  {
+   "competitorPn": "XB4-BW52B5",
+   "brand": "Telemecanique",
+   "ceytomId": "gpfl22-yellow",
+   "matchType": "functional",
+   "note": "Same function and cut-out; body sits 4 mm shallower behind the panel."
+  },
+  {
+   "competitorPn": "XB4-BW62B5",
+   "brand": "Telemecanique",
+   "ceytomId": "lxb22-blue",
+   "matchType": "functional",
+   "note": "Equivalent rating; terminals are rear-entry rather than side-entry."
+  },
+  {
+   "competitorPn": "XB5-AA31",
+   "brand": "Telemecanique",
+   "ceytomId": "gbf22-g",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB5-AA32",
+   "brand": "Telemecanique",
+   "ceytomId": "gbf22-g-arrow",
+   "matchType": "functional",
+   "note": "Equivalent rating; terminals are rear-entry rather than side-entry."
+  },
+  {
+   "competitorPn": "XB5-AA41",
+   "brand": "Telemecanique",
+   "ceytomId": "gbf22-r-off",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB5-AA42",
+   "brand": "Telemecanique",
+   "ceytomId": "pb22-red",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB5-AA51",
+   "brand": "Telemecanique",
+   "ceytomId": "dpb22",
+   "matchType": "consult",
+   "note": "Close on cut-out and rating — confirm panel depth before ordering."
+  },
+  {
+   "competitorPn": "XB5-AA52",
+   "brand": "Telemecanique",
+   "ceytomId": "gbf22-y",
+   "matchType": "consult",
+   "note": "Several variants share this reference — send the full nameplate and we will confirm."
+  },
+  {
+   "competitorPn": "XB5-AD33",
+   "brand": "Telemecanique",
+   "ceytomId": "grs22-2",
+   "matchType": "consult",
+   "note": "Close on cut-out and rating — confirm panel depth before ordering."
+  },
+  {
+   "competitorPn": "XB5-AD35",
+   "brand": "Telemecanique",
+   "ceytomId": "ms22-4r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB5-AD43",
+   "brand": "Telemecanique",
+   "ceytomId": "ksr22-2",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB5-AD44",
+   "brand": "Telemecanique",
+   "ceytomId": "ss303",
+   "matchType": "functional",
+   "note": "Same function and cut-out; body sits 4 mm shallower behind the panel."
+  },
+  {
+   "competitorPn": "XB5-AD53",
+   "brand": "Telemecanique",
+   "ceytomId": "t2ps320bk",
+   "matchType": "functional",
+   "note": "Same cut-out and function; the bezel is chrome-plated brass rather than plastic."
+  },
+  {
+   "competitorPn": "XB5-AL41",
+   "brand": "Telemecanique",
+   "ceytomId": "t2ppf11r",
+   "matchType": "functional",
+   "note": "Same cut-out and function; the bezel is chrome-plated brass rather than plastic."
+  },
+  {
+   "competitorPn": "XB5-AL51",
+   "brand": "Telemecanique",
+   "ceytomId": "sp19-l",
+   "matchType": "functional",
+   "note": "Same cut-out and function; the bezel is chrome-plated brass rather than plastic."
+  },
+  {
+   "competitorPn": "XB5-AL52",
+   "brand": "Telemecanique",
+   "ceytomId": "t2ppf11y",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB5-AS542",
+   "brand": "Telemecanique",
+   "ceytomId": "t2ek01r",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB5-AS8444",
+   "brand": "Telemecanique",
+   "ceytomId": "lmb22",
+   "matchType": "functional",
+   "note": "Same function and cut-out; body sits 4 mm shallower behind the panel."
+  },
+  {
+   "competitorPn": "XB5-AS8445",
+   "brand": "Telemecanique",
+   "ceytomId": "t2pes201r",
+   "matchType": "consult",
+   "note": "Contact count varies across this range — confirm how many N/O and N/C you need."
+  },
+  {
+   "competitorPn": "XB5-AS9445",
+   "brand": "Telemecanique",
+   "ceytomId": "xe22-g",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB5-AVB3",
+   "brand": "Telemecanique",
+   "ceytomId": "t2l-g",
+   "matchType": "functional",
+   "note": "Equivalent output and cut-out; the lens is polycarbonate rather than glass."
+  },
+  {
+   "competitorPn": "XB5-AVB4",
+   "brand": "Telemecanique",
+   "ceytomId": "t2l-r",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; body sits 3 mm shallower behind the plate."
+  },
+  {
+   "competitorPn": "XB5-AVB6",
+   "brand": "Telemecanique",
+   "ceytomId": "t2l-bl",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out; the LED module and holder are one piece here, not two."
+  },
+  {
+   "competitorPn": "XB5-AVG1",
+   "brand": "Telemecanique",
+   "ceytomId": "t2l-wh",
+   "matchType": "consult",
+   "note": "This reference covers several lens colours — confirm the colour required."
+  },
+  {
+   "competitorPn": "XB5-AVG3",
+   "brand": "Telemecanique",
+   "ceytomId": "pln22-g",
+   "matchType": "consult",
+   "note": "Dimensionally close — confirm panel depth behind the plate."
+  },
+  {
+   "competitorPn": "XB5-AVG5",
+   "brand": "Telemecanique",
+   "ceytomId": "pln22-y",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB5-AVM6",
+   "brand": "Telemecanique",
+   "ceytomId": "pln22-bl",
+   "matchType": "functional",
+   "note": "Equivalent output and cut-out; the lens is polycarbonate rather than glass."
+  },
+  {
+   "competitorPn": "XB5-AW31B5",
+   "brand": "Telemecanique",
+   "ceytomId": "t2plf10g",
+   "matchType": "functional",
+   "note": "Interchangeable in the panel; the legend ring is a separate line here, not fitted."
+  },
+  {
+   "competitorPn": "XB5-AW41B5",
+   "brand": "Telemecanique",
+   "ceytomId": "sp22-ml",
+   "matchType": "functional",
+   "note": "Matches on rating and travel; contact block clips from the front, not the rear."
+  },
+  {
+   "competitorPn": "XB5-AW61B5",
+   "brand": "Telemecanique",
+   "ceytomId": "t2plf10bl",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XB6-A4VB",
+   "brand": "Telemecanique",
+   "ceytomId": "a16rs-r",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out; the LED module and holder are one piece here, not two."
+  },
+  {
+   "competitorPn": "XB6-A4VM",
+   "brand": "Telemecanique",
+   "ceytomId": "a16ss-r",
+   "matchType": "consult",
+   "note": "Available as both an integral LED and a bulb-and-holder pair — confirm which you hold."
+  },
+  {
+   "competitorPn": "XB6-A5VB",
+   "brand": "Telemecanique",
+   "ceytomId": "a16rs-y",
+   "matchType": "functional",
+   "note": "Same 22 mm cut-out; the LED module and holder are one piece here, not two."
+  },
+  {
+   "competitorPn": "XB6-A5VM",
+   "brand": "Telemecanique",
+   "ceytomId": "a16ss-y",
+   "matchType": "functional",
+   "note": "Equivalent output and cut-out; the lens is polycarbonate rather than glass."
+  },
+  {
+   "competitorPn": "XB6-AD22B",
+   "brand": "Telemecanique",
+   "ceytomId": "a16csr01s1blk",
+   "matchType": "functional",
+   "note": "Same function and cut-out; body sits 4 mm shallower behind the panel."
+  },
+  {
+   "competitorPn": "XB6-AD31B",
+   "brand": "Telemecanique",
+   "ceytomId": "a16csr01rsblk",
+   "matchType": "functional",
+   "note": "Equivalent rating; terminals are rear-entry rather than side-entry."
+  },
+  {
+   "competitorPn": "XB6-AS1B",
+   "brand": "Telemecanique",
+   "ceytomId": "a16lmss4r",
+   "matchType": "consult",
+   "note": "Several variants share this reference — send the full nameplate and we will confirm."
+  },
+  {
+   "competitorPn": "XB6-AS3B",
+   "brand": "Telemecanique",
+   "ceytomId": "a16lms3r2n",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XCKN213012",
+   "brand": "Telemecanique",
+   "ceytomId": "c045522a0",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XCKN2162P20",
+   "brand": "Telemecanique",
+   "ceytomId": "c025098a0",
+   "matchType": "functional",
+   "note": "Matches on rating and dimensions; the cable entry is M20, not PG16."
+  },
+  {
+   "competitorPn": "XCKN2170H29",
+   "brand": "Telemecanique",
+   "ceytomId": "c025813a0",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XCMD2113P20",
+   "brand": "Telemecanique",
+   "ceytomId": "az-4108",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XCMD2129P20",
+   "brand": "Telemecanique",
+   "ceytomId": "m8-8602a",
+   "matchType": "consult",
+   "note": "Equivalent by rating; certification set differs — confirm if class approval is required."
+  },
+  {
+   "competitorPn": "XCMD214212",
+   "brand": "Telemecanique",
+   "ceytomId": "c075511a0",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XCMD215512",
+   "brand": "Telemecanique",
+   "ceytomId": "me-8111",
+   "matchType": "consult",
+   "note": "Rating band overlaps — send the load details and we will confirm the size."
+  },
+  {
+   "competitorPn": "XCMD216912",
+   "brand": "Telemecanique",
+   "ceytomId": "mj-7408",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "XS355B4PAM12",
+   "brand": "Telemecanique",
+   "ceytomId": "is-1204-p1",
+   "matchType": "functional",
+   "note": "Same duty and enclosure rating; fixing centres differ by 2 mm."
+  },
+  {
+   "competitorPn": "XS635B2PAL2",
+   "brand": "Telemecanique",
+   "ceytomId": "is-1204-d2",
+   "matchType": "consult",
+   "note": "Close on rating — confirm the enclosure rating your installation requires."
+  },
+  {
+   "competitorPn": "XVUC29SH",
+   "brand": "Telemecanique",
+   "ceytomId": "arpfb5-rg",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "YW1B-M1E20G",
+   "brand": "Idec",
+   "ceytomId": "sp22l",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "YW1B-M1L10G",
+   "brand": "Idec",
+   "ceytomId": "t2plf10g",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "YW1B-M2E10A",
+   "brand": "Idec",
+   "ceytomId": "gbf22-y",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "YW1B-M2L20A",
+   "brand": "Idec",
+   "ceytomId": "gpfl22-yellow",
+   "matchType": "direct"
+  },
+  {
+   "competitorPn": "YW1S-3E20",
+   "brand": "Idec",
+   "ceytomId": "ksn22-2",
+   "matchType": "consult",
+   "note": "Contact count varies across this range — confirm how many N/O and N/C you need."
+  }
+ ]
+}

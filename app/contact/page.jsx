@@ -42,7 +42,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-shell px-6 py-14">
           <Eyebrow tone="light">Contact</Eyebrow>
           <h1 className="h-display mt-3 text-[30px] md:text-[42px]">Talk to the sales desk</h1>
-          <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-on-primary/80">
+          <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-on-primary/90">
             If a vessel is waiting, call or message rather than email. We can usually confirm
             stock while you are on the line.
           </p>

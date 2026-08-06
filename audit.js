@@ -1,36 +1,45 @@
-const puppeteer = require("puppeteer-core");
+const fs = require("fs");
+const path = require("path");
+const { launch, applyTheme, THEME_IDS } = require("./browser");
 
-const BASE = "http://127.0.0.1:3307";
+const BASE = process.env.AUDIT_BASE || "http://127.0.0.1:3307";
+const SHOTS = process.env.AUDIT_SHOTS || path.join(__dirname, ".audit-shots");
+
 const PAGES = [
   ["home", "/"],
   ["catalog", "/catalog"],
   ["product", "/product/lmb22"],
+  ["product-assembly", "/product/pln22-r"],
   ["quote", "/quote"],
+  ["quote-saved", "/quote/saved"],
+  ["cross-reference", "/cross-reference"],
   ["system", "/systems/main-switchboard"],
   ["brands", "/brands"],
 ];
+
 const VIEWPORTS = [
   ["desktop", 1440, 900],
+  // the header carries six nav items, a theme switcher and a CTA — 1024 is the
+  // narrowest width at which they all have to fit on one row
+  ["laptop", 1024, 800],
   ["mobile", 390, 844],
 ];
 
 (async () => {
-  const browser = await puppeteer.launch({
-    executablePath: "/opt/google/chrome/chrome",
-    args: ["--no-sandbox", "--disable-gpu", "--hide-scrollbars"],
-  });
+  const browser = await launch();
+  fs.mkdirSync(SHOTS, { recursive: true });
 
   const problems = [];
 
   for (const [vpName, w, h] of VIEWPORTS) {
-    for (const [name, path] of PAGES) {
+    for (const [name, pathname] of PAGES) {
       const page = await browser.newPage();
       await page.setViewport({ width: w, height: h, deviceScaleFactor: 1 });
       const errors = [];
       page.on("console", (m) => m.type() === "error" && errors.push(m.text()));
       page.on("pageerror", (e) => errors.push(String(e)));
 
-      await page.goto(BASE + path, { waitUntil: "networkidle0", timeout: 60000 });
+      await page.goto(BASE + pathname, { waitUntil: "networkidle0", timeout: 60000 });
       await new Promise((r) => setTimeout(r, 400));
 
       const audit = await page.evaluate(() => {
@@ -73,9 +82,27 @@ const VIEWPORTS = [
       errors.forEach((e) => problems.push(`${vpName}/${name}: console ${e.slice(0, 120)}`));
 
       await page.screenshot({
-        path: `/tmp/shots/${vpName}-${name}.png`,
+        path: path.join(SHOTS, `${vpName}-${name}.png`),
         fullPage: vpName === "desktop" && name === "home",
       });
+      await page.close();
+    }
+  }
+
+  // The header is the one piece of chrome every theme shares and the one most
+  // likely to overflow, since theme names change the switcher's width.
+  for (const theme of THEME_IDS) {
+    for (const [vpName, w, h] of VIEWPORTS) {
+      const page = await browser.newPage();
+      await page.setViewport({ width: w, height: h, deviceScaleFactor: 1 });
+      await applyTheme(page, theme);
+      await page.goto(BASE + "/cross-reference", { waitUntil: "networkidle0", timeout: 60000 });
+      const width = await page.evaluate(() => ({
+        doc: document.documentElement.scrollWidth,
+        vp: window.innerWidth,
+      }));
+      if (width.doc > width.vp + 2)
+        problems.push(`${theme}/${vpName}: horizontal scroll (doc ${width.doc} > vp ${width.vp})`);
       await page.close();
     }
   }
@@ -83,4 +110,5 @@ const VIEWPORTS = [
   await browser.close();
   if (problems.length === 0) console.log("No layout problems found.");
   else problems.forEach((p) => console.log("• " + p));
+  process.exitCode = problems.length ? 1 : 0;
 })();

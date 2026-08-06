@@ -1,0 +1,2054 @@
+{
+ "note": "Inferred from catalogue facets — mounting hole diameter, plate size, relay pin count, and the catalogue's own 'w/o Bulb' and 'Suitable for …' wording. Demonstration data: verify against manufacturer drawings before publication.",
+ "roles": {
+  "requires": "Does not function without it. Missing = error, not upsell.",
+  "recommended": "Standard practice for a marine panel.",
+  "optional": "Applies to some installations only."
+ },
+ "relations": {
+  "lmb22": [
+   {
+    "id": "x:contact-block-22mm-nc",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/C",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. An emergency stop must break the circuit through at least one N/C block — the head on its own switches nothing. Contact blocks are not a listed line; we quote the block that fits this 22 mm head."
+   },
+   {
+    "id": "g4b22",
+    "role": "recommended",
+    "kind": "guard",
+    "reason": "Deck and engine-room stations take knocks. A collision guard prevents the mushroom head being operated by passing traffic or stowed gear."
+   },
+   {
+    "id": "g2bm4",
+    "role": "recommended",
+    "kind": "legend",
+    "reason": "An emergency stop station has to be identified at the panel. This is the matching 22 mm label plate."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "eks22": [
+   {
+    "id": "x:contact-block-22mm-nc",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/C",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. An emergency stop must break the circuit through at least one N/C block — the head on its own switches nothing. Contact blocks are not a listed line; we quote the block that fits this 22 mm head."
+   },
+   {
+    "id": "g4b22",
+    "role": "recommended",
+    "kind": "guard",
+    "reason": "Deck and engine-room stations take knocks. A collision guard prevents the mushroom head being operated by passing traffic or stowed gear."
+   },
+   {
+    "id": "g2bm4",
+    "role": "recommended",
+    "kind": "legend",
+    "reason": "An emergency stop station has to be identified at the panel. This is the matching 22 mm label plate."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "lms22": [
+   {
+    "id": "x:contact-block-22mm-nc",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/C",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. An emergency stop must break the circuit through at least one N/C block — the head on its own switches nothing. Contact blocks are not a listed line; we quote the block that fits this 22 mm head."
+   },
+   {
+    "id": "g4b22",
+    "role": "recommended",
+    "kind": "guard",
+    "reason": "Deck and engine-room stations take knocks. A collision guard prevents the mushroom head being operated by passing traffic or stowed gear."
+   },
+   {
+    "id": "g2bm4",
+    "role": "recommended",
+    "kind": "legend",
+    "reason": "An emergency stop station has to be identified at the panel. This is the matching 22 mm label plate."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "xe22-r": [
+   {
+    "id": "x:contact-block-22mm-nc",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/C",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. An emergency stop must break the circuit through at least one N/C block — the head on its own switches nothing. Contact blocks are not a listed line; we quote the block that fits this 22 mm head."
+   },
+   {
+    "id": "g4b22",
+    "role": "recommended",
+    "kind": "guard",
+    "reason": "Deck and engine-room stations take knocks. A collision guard prevents the mushroom head being operated by passing traffic or stowed gear."
+   },
+   {
+    "id": "g2bm4",
+    "role": "recommended",
+    "kind": "legend",
+    "reason": "An emergency stop station has to be identified at the panel. This is the matching 22 mm label plate."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "xe22-g": [
+   {
+    "id": "x:contact-block-22mm-nc",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/C",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. An emergency stop must break the circuit through at least one N/C block — the head on its own switches nothing. Contact blocks are not a listed line; we quote the block that fits this 22 mm head."
+   },
+   {
+    "id": "g4b22",
+    "role": "recommended",
+    "kind": "guard",
+    "reason": "Deck and engine-room stations take knocks. A collision guard prevents the mushroom head being operated by passing traffic or stowed gear."
+   },
+   {
+    "id": "g2bm4",
+    "role": "recommended",
+    "kind": "legend",
+    "reason": "An emergency stop station has to be identified at the panel. This is the matching 22 mm label plate."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "mbl22": [
+   {
+    "id": "x:contact-block-22mm-nc",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/C",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. An emergency stop must break the circuit through at least one N/C block — the head on its own switches nothing. Contact blocks are not a listed line; we quote the block that fits this 22 mm head."
+   },
+   {
+    "id": "g4b22",
+    "role": "recommended",
+    "kind": "guard",
+    "reason": "Deck and engine-room stations take knocks. A collision guard prevents the mushroom head being operated by passing traffic or stowed gear."
+   },
+   {
+    "id": "g2bm4",
+    "role": "recommended",
+    "kind": "legend",
+    "reason": "An emergency stop station has to be identified at the panel. This is the matching 22 mm label plate."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2pes201r": [
+   {
+    "id": "x:contact-block-22mm-nc",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/C",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. An emergency stop must break the circuit through at least one N/C block — the head on its own switches nothing. Contact blocks are not a listed line; we quote the block that fits this 22 mm head."
+   },
+   {
+    "id": "g4b22",
+    "role": "recommended",
+    "kind": "guard",
+    "reason": "Deck and engine-room stations take knocks. A collision guard prevents the mushroom head being operated by passing traffic or stowed gear."
+   },
+   {
+    "id": "g2bm4",
+    "role": "recommended",
+    "kind": "legend",
+    "reason": "An emergency stop station has to be identified at the panel. This is the matching 22 mm label plate."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2pes401r": [
+   {
+    "id": "x:contact-block-22mm-nc",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/C",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. An emergency stop must break the circuit through at least one N/C block — the head on its own switches nothing. Contact blocks are not a listed line; we quote the block that fits this 22 mm head."
+   },
+   {
+    "id": "g4b22",
+    "role": "recommended",
+    "kind": "guard",
+    "reason": "Deck and engine-room stations take knocks. A collision guard prevents the mushroom head being operated by passing traffic or stowed gear."
+   },
+   {
+    "id": "g2bm4",
+    "role": "recommended",
+    "kind": "legend",
+    "reason": "An emergency stop station has to be identified at the panel. This is the matching 22 mm label plate."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2ek01r": [
+   {
+    "id": "x:contact-block-22mm-nc",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/C",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. An emergency stop must break the circuit through at least one N/C block — the head on its own switches nothing. Contact blocks are not a listed line; we quote the block that fits this 22 mm head."
+   },
+   {
+    "id": "g4b22",
+    "role": "recommended",
+    "kind": "guard",
+    "reason": "Deck and engine-room stations take knocks. A collision guard prevents the mushroom head being operated by passing traffic or stowed gear."
+   },
+   {
+    "id": "g2bm4",
+    "role": "recommended",
+    "kind": "legend",
+    "reason": "An emergency stop station has to be identified at the panel. This is the matching 22 mm label plate."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "sp22-es": [
+   {
+    "id": "g4b22",
+    "role": "recommended",
+    "kind": "guard",
+    "reason": "Deck and engine-room stations take knocks. A collision guard prevents the mushroom head being operated by passing traffic or stowed gear."
+   },
+   {
+    "id": "g2bm4",
+    "role": "recommended",
+    "kind": "legend",
+    "reason": "An emergency stop station has to be identified at the panel. This is the matching 22 mm label plate."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "mbl30": [
+   {
+    "id": "x:contact-block-30mm-nc",
+    "unlisted": true,
+    "label": "30 mm contact block — 1 N/C",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. An emergency stop must break the circuit through at least one N/C block — the head on its own switches nothing. Contact blocks are not a listed line; we quote the block that fits this 30 mm head."
+   }
+  ],
+  "apb22-g": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "apb22-r": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "apb22-y": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "sp19-ml": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "sp19-m": [
+   {
+    "id": "x:contact-block-22mm-no",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/O",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. Without a contact block behind it this 22 mm actuator switches nothing. Contact blocks are not a listed line; we quote the block that fits."
+   },
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "sp19-l": [
+   {
+    "id": "x:contact-block-22mm-no",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/O",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. Without a contact block behind it this 22 mm actuator switches nothing. Contact blocks are not a listed line; we quote the block that fits."
+   },
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "sp22-ml": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "sp22m": [
+   {
+    "id": "x:contact-block-22mm-no",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/O",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. Without a contact block behind it this 22 mm actuator switches nothing. Contact blocks are not a listed line; we quote the block that fits."
+   },
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "sp22l": [
+   {
+    "id": "x:contact-block-22mm-no",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/O",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. Without a contact block behind it this 22 mm actuator switches nothing. Contact blocks are not a listed line; we quote the block that fits."
+   },
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2dbf11y": [
+   {
+    "id": "x:contact-block-22mm-no",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/O",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. Without a contact block behind it this 22 mm actuator switches nothing. Contact blocks are not a listed line; we quote the block that fits."
+   },
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "dpb22": [
+   {
+    "id": "x:contact-block-22mm-no",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/O",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. Without a contact block behind it this 22 mm actuator switches nothing. Contact blocks are not a listed line; we quote the block that fits."
+   },
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gbf22-blk": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gbf22-g": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gbf22-r": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gbf22-y": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gbf22-blue": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2pf10g": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2pf01r": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2pf10y": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2pf10w": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2pf10bl": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2pf10blk": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gbf22-g-arrow": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gbf22-y-arrow": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2ppf11r": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2ppf11g": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2ppf11y": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gbf22-r-off": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gpfl22-green": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gpfl22-red": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gpfl22-yellow": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "lxb22-green": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "lxb22-red": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "lxb22-yellow": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "lxb22-blue": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "lxb22-white": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2plf10g": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2plf10y": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2plf01r": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2plf10bl": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2plf10wh": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "lxl22-green": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "lxl22-red": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "pb22-green": [
+   {
+    "id": "x:contact-block-22mm-no",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/O",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. Without a contact block behind it this 22 mm actuator switches nothing. Contact blocks are not a listed line; we quote the block that fits."
+   },
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "pb22-red": [
+   {
+    "id": "x:contact-block-22mm-no",
+    "unlisted": true,
+    "label": "22 mm contact block — 1 N/O",
+    "role": "requires",
+    "kind": "contact-block",
+    "reason": "Head only. Without a contact block behind it this 22 mm actuator switches nothing. Contact blocks are not a listed line; we quote the block that fits."
+   },
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "lxb30-green": [
+   {
+    "id": "rcb30",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 30 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "lxb30-red": [
+   {
+    "id": "rcb30",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 30 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "lxb30-white": [
+   {
+    "id": "rcb30",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 30 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "lxb30-yellow": [
+   {
+    "id": "rcb30",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 30 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "pbf30-g": [
+   {
+    "id": "rcb30",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 30 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "pbf30-r": [
+   {
+    "id": "rcb30",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 30 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "gcs22-2": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gcs22-3": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2ps210bk": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2ps320bk": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gsl22-2": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gsl22-3": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2prs320bk": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "grs22-2": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "grs22-3": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "grs22-a": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "grs22-b": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "aks22-3": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "gks22-2": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2k2n10": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "ksn22-2": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "ksn22-3": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "ksr22-2": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "ksr22-3": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "t2k3r20": [
+   {
+    "id": "rcb22",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 22 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   },
+   {
+    "id": "b1a-g-b",
+    "role": "optional",
+    "kind": "enclosure",
+    "reason": "Mounting outside a switchboard? This enclosure is drilled for 22 mm devices and rated for the space."
+   }
+  ],
+  "ss302": [
+   {
+    "id": "rcb30",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 30 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "ss303": [
+   {
+    "id": "rcb30",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 30 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "cs30": [
+   {
+    "id": "rcb30",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 30 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "a16csr01rsblk": [
+   {
+    "id": "a163",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 16 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "a16csr30r3blk": [
+   {
+    "id": "a163",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 16 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "a16csr01s1blk": [
+   {
+    "id": "a163",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 16 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "a16csr30s3blk": [
+   {
+    "id": "a163",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 16 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "a16ksr12s2blk": [
+   {
+    "id": "a163",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 16 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "a16ksr30s3blk": [
+   {
+    "id": "a163",
+    "role": "optional",
+    "kind": "guard",
+    "reason": "Exposed positions: a 16 mm clear cover keeps water, dust and accidental contact off the actuator without hiding it."
+   }
+  ],
+  "pln22-bl": [
+   {
+    "id": "s9-blue",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in blue to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "pln22-g": [
+   {
+    "id": "s9-green",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in green to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "pln22-r": [
+   {
+    "id": "s9-red",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in red to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "pln22-y": [
+   {
+    "id": "s9-yellow",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in yellow to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "pln22-w": [
+   {
+    "id": "s9-white",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in white to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "t2l-g": [
+   {
+    "id": "s9-green",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in green to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "t2l-r": [
+   {
+    "id": "s9-red",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in red to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "t2l-y": [
+   {
+    "id": "s9-yellow",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in yellow to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "t2l-bl": [
+   {
+    "id": "s9-blue",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in blue to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "t2l-wh": [
+   {
+    "id": "s9-white",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in white to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "pln30-g": [
+   {
+    "id": "s9-green",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in green to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "pln30-r": [
+   {
+    "id": "s9-red",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in red to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "pln30-w": [
+   {
+    "id": "s9-red",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in red to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "pln30-y": [
+   {
+    "id": "s9-red",
+    "role": "requires",
+    "kind": "bulb",
+    "reason": "Supplied without a bulb. This holder takes a BA9s bayonet bulb — order it in red to match the lens, and to your control voltage."
+   },
+   {
+    "id": "s9-filament",
+    "role": "optional",
+    "kind": "bulb",
+    "reason": "Filament equivalent, where a vessel's existing panel is not on LED."
+   }
+  ],
+  "a4170": [
+   {
+    "id": "pcb2",
+    "role": "recommended",
+    "kind": "enclosure",
+    "reason": "Panel-mount switch with a 64×64mm plate. Fitted outside a switchboard it needs an enclosure — this one takes that plate size."
+   }
+  ],
+  "a4171": [
+   {
+    "id": "pcb2",
+    "role": "recommended",
+    "kind": "enclosure",
+    "reason": "Panel-mount switch with a 64×64mm plate. Fitted outside a switchboard it needs an enclosure — this one takes that plate size."
+   }
+  ],
+  "c170": [
+   {
+    "id": "pcb2",
+    "role": "recommended",
+    "kind": "enclosure",
+    "reason": "Panel-mount switch with a 64×64mm plate. Fitted outside a switchboard it needs an enclosure — this one takes that plate size."
+   }
+  ],
+  "c171": [
+   {
+    "id": "pcb2",
+    "role": "recommended",
+    "kind": "enclosure",
+    "reason": "Panel-mount switch with a 64×64mm plate. Fitted outside a switchboard it needs an enclosure — this one takes that plate size."
+   }
+  ],
+  "c173": [
+   {
+    "id": "pcb2",
+    "role": "recommended",
+    "kind": "enclosure",
+    "reason": "Panel-mount switch with a 64×64mm plate. Fitted outside a switchboard it needs an enclosure — this one takes that plate size."
+   }
+  ],
+  "c172": [
+   {
+    "id": "pcb2",
+    "role": "recommended",
+    "kind": "enclosure",
+    "reason": "Panel-mount switch with a 64×64mm plate. Fitted outside a switchboard it needs an enclosure — this one takes that plate size."
+   }
+  ],
+  "a4180": [
+   {
+    "id": "sp1-g",
+    "role": "recommended",
+    "kind": "enclosure",
+    "reason": "Panel-mount switch with a 48×48mm plate. Fitted outside a switchboard it needs an enclosure — this one takes that plate size."
+   }
+  ],
+  "c180": [
+   {
+    "id": "sp1-g",
+    "role": "recommended",
+    "kind": "enclosure",
+    "reason": "Panel-mount switch with a 48×48mm plate. Fitted outside a switchboard it needs an enclosure — this one takes that plate size."
+   }
+  ],
+  "lb4hn": [
+   {
+    "id": "skc14-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "14-pin plug-in relay. It has no mounting feet of its own — it needs a 14-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "skb14-e",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "mr2810",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "lb2hn": [
+   {
+    "id": "skc08-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "8-pin plug-in relay. It has no mounting feet of its own — it needs an 8-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "sub08-e",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "114120",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "lb2n": [
+   {
+    "id": "skc08-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "8-pin plug-in relay. It has no mounting feet of its own — it needs an 8-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "sub08-e",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "114120",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "rkf2": [
+   {
+    "id": "skc14-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "14-pin plug-in relay. It has no mounting feet of its own — it needs a 14-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "skb14-e",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "mr2810",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "rkf4": [
+   {
+    "id": "skc14-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "14-pin plug-in relay. It has no mounting feet of its own — it needs a 14-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "skb14-e",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "mr2810",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "rkl4": [
+   {
+    "id": "stb14-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "14-pin plug-in relay. It has no mounting feet of its own — it needs a 14-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "mr2810",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "reh2": [
+   {
+    "id": "skc08-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "8-pin plug-in relay. It has no mounting feet of its own — it needs an 8-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "sub08-e",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "114120",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "reh3": [
+   {
+    "id": "sub11-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "11-pin plug-in relay. It has no mounting feet of its own — it needs an 11-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "pf11a",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "284210",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "rub3c": [
+   {
+    "id": "sub11-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "11-pin plug-in relay. It has no mounting feet of its own — it needs an 11-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "pf11a",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "284210",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "rft1": [
+   {
+    "id": "sru05-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "5-pin plug-in relay. It has no mounting feet of its own — it needs a 5-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "sc98-20",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "rft2": [
+   {
+    "id": "sru08-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "8-pin plug-in relay. It has no mounting feet of its own — it needs an 8-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "114120",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "lmp224d": [
+   {
+    "id": "skc08-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "8-pin plug-in relay. It has no mounting feet of its own — it needs an 8-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "sub08-e",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "114120",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "lmr224d": [
+   {
+    "id": "skc08-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "8-pin plug-in relay. It has no mounting feet of its own — it needs an 8-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "sub08-e",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "114120",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "mk2pn": [
+   {
+    "id": "skc08-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "8-pin plug-in relay. It has no mounting feet of its own — it needs an 8-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "sub08-e",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "114120",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "mk3pn": [
+   {
+    "id": "sub11-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "11-pin plug-in relay. It has no mounting feet of its own — it needs an 11-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "pf11a",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "284210",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "jqx38-f": [
+   {
+    "id": "skc08-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "8-pin plug-in relay. It has no mounting feet of its own — it needs an 8-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "sub08-e",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "114120",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "ptf38": [
+   {
+    "id": "skc08-e",
+    "role": "requires",
+    "kind": "base",
+    "reason": "8-pin plug-in relay. It has no mounting feet of its own — it needs an 8-pin base to land on the DIN rail and to land the wiring."
+   },
+   {
+    "id": "sub08-e",
+    "role": "optional",
+    "kind": "base",
+    "reason": "Alternative base with the same pin layout — different terminal style."
+   },
+   {
+    "id": "114120",
+    "role": "optional",
+    "kind": "timer",
+    "reason": "Adds a delay-on or delay-off function to the same rail without a separate controller."
+   }
+  ],
+  "eri48-a": [
+   {
+    "id": "tcsn51",
+    "role": "recommended",
+    "kind": "ct",
+    "reason": "This meter reads through a current transformer. Size the CT to the primary current, not to the meter."
+   },
+   {
+    "id": "as34",
+    "role": "optional",
+    "kind": "selector",
+    "reason": "Switches one meter across all three phases instead of fitting three."
+   }
+  ],
+  "2erid488a-p6": [
+   {
+    "id": "tar12e",
+    "role": "recommended",
+    "kind": "ct",
+    "reason": "This meter reads through a current transformer. Size the CT to the primary current, not to the meter."
+   }
+  ],
+  "2erid48-a": [
+   {
+    "id": "tar01",
+    "role": "recommended",
+    "kind": "ct",
+    "reason": "This meter reads through a current transformer. Size the CT to the primary current, not to the meter."
+   }
+  ],
+  "2erid-a": [
+   {
+    "id": "tcsn51",
+    "role": "recommended",
+    "kind": "ct",
+    "reason": "This meter reads through a current transformer. Size the CT to the primary current, not to the meter."
+   },
+   {
+    "id": "as34",
+    "role": "optional",
+    "kind": "selector",
+    "reason": "Switches one meter across all three phases instead of fitting three."
+   }
+  ],
+  "erc72": [
+   {
+    "id": "tar4de",
+    "role": "recommended",
+    "kind": "ct",
+    "reason": "This meter reads through a current transformer. Size the CT to the primary current, not to the meter."
+   },
+   {
+    "id": "as34",
+    "role": "optional",
+    "kind": "selector",
+    "reason": "Switches one meter across all three phases instead of fitting three."
+   }
+  ],
+  "emi55-25a": [
+   {
+    "id": "tar01",
+    "role": "recommended",
+    "kind": "ct",
+    "reason": "This meter reads through a current transformer. Size the CT to the primary current, not to the meter."
+   },
+   {
+    "id": "as34",
+    "role": "optional",
+    "kind": "selector",
+    "reason": "Switches one meter across all three phases instead of fitting three."
+   }
+  ],
+  "emi55-50a": [
+   {
+    "id": "tar01",
+    "role": "recommended",
+    "kind": "ct",
+    "reason": "This meter reads through a current transformer. Size the CT to the primary current, not to the meter."
+   },
+   {
+    "id": "as34",
+    "role": "optional",
+    "kind": "selector",
+    "reason": "Switches one meter across all three phases instead of fitting three."
+   }
+  ],
+  "rh10122raagr": [
+   {
+    "id": "tar12e",
+    "role": "recommended",
+    "kind": "ct",
+    "reason": "This meter reads through a current transformer. Size the CT to the primary current, not to the meter."
+   },
+   {
+    "id": "as34",
+    "role": "optional",
+    "kind": "selector",
+    "reason": "Switches one meter across all three phases instead of fitting three."
+   }
+  ]
+ }
+}

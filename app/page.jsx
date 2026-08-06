@@ -9,6 +9,8 @@ import {
   categories,
   BRANDS,
   COMPANY,
+  availabilityKey,
+  crossrefs,
 } from "@/lib/data";
 
 const CERT_STRIP = ["CE Mark", "UL Listed", "TÜV", "CSA", "IEC", "RoHS"];
@@ -17,10 +19,15 @@ function searchIndex() {
   return products.map((p) => ({ i: p.id, p: p.partNumber, n: p.name, c: p.category }));
 }
 
+function xrefIndex() {
+  return crossrefs.map((e) => ({ x: e.competitorPn, b: e.brand, i: e.ceytomId, t: e.matchType }));
+}
+
 export default function Home() {
   const index = searchIndex();
+  const xrefs = xrefIndex();
   const featured = products.filter((p) => p.image).slice(0, 8);
-  const inStock = products.filter((p) => p.stock.startsWith("In stock")).length;
+  const inStock = products.filter((p) => availabilityKey(p) === "in-stock").length;
 
   return (
     <>
@@ -36,24 +43,43 @@ export default function Home() {
               <br />
               <span className="text-tint">number</span>, not its name.
             </h1>
-            <p className="mx-auto mt-6 max-w-xl text-[15px] leading-relaxed text-on-primary/80 md:text-[16px]">
+            <p className="mx-auto mt-6 max-w-xl text-[15px] leading-relaxed text-on-primary/90 md:text-[16px]">
               Marine electrical switchgear, control and signalling components for
               commercial vessels. {products.length} part numbers, {inStock} in Dubai stock,
               delivered to vessel or berth.
             </p>
 
             <div className="mt-10">
-              <PartSearch index={index} />
-              <p className="data mt-3 text-left text-[11px] text-tint/70">
+              <PartSearch index={index} xrefIndex={xrefs} />
+              <p className="data mt-3 text-left text-[11px] text-tint/90">
                 <span className="caret" />
                 Type a part number, or a description such as “emergency stop 22mm”
               </p>
             </div>
 
+            {/* A buyer holding a failed competitor part has a different intent
+                from one looking up our own number, so it gets its own door. */}
+            <div className="mt-8 border border-tint/25 bg-on-primary/[0.05] p-5 text-left sm:flex sm:items-center sm:justify-between sm:gap-6">
+              <div>
+                <p className="eyebrow text-tint/90">Holding a failed part from another brand?</p>
+                <p className="mt-2 text-[14px] leading-relaxed text-on-primary/90">
+                  Look up a Telemecanique, Allen-Bradley, Moeller, Siemens, ABB, Idec or Omron
+                  reference and we will show what replaces it.{" "}
+                  <span className="data text-tint">{crossrefs.length}</span> references cross-listed.
+                </p>
+              </div>
+              <Link
+                href="/cross-reference"
+                className="mt-4 inline-block shrink-0 border border-tint px-5 py-2.5 text-[13px] font-semibold text-tint transition-colors hover:bg-tint hover:text-primary sm:mt-0"
+              >
+                Cross-reference a part →
+              </Link>
+            </div>
+
             <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-              <span className="eyebrow text-tint/70">Quote in {COMPANY.responseTime}</span>
+              <span className="eyebrow text-tint/90">Quote in {COMPANY.responseTime}</span>
               <span className="h-3 w-px bg-tint/20" />
-              <Link href="/quote" className="text-[14px] font-semibold text-accent hover:underline">
+              <Link href="/quote" className="text-[14px] font-semibold text-tint underline-offset-4 hover:underline">
                 Upload a parts list →
               </Link>
             </div>
@@ -63,9 +89,9 @@ export default function Home() {
         {/* certification strip */}
         <div className="border-t border-tint/12">
           <div className="mx-auto flex max-w-shell flex-wrap items-center justify-center gap-x-10 gap-y-3 px-6 py-5">
-            <span className="eyebrow text-tint/70">Certified to</span>
+            <span className="eyebrow text-tint/90">Certified to</span>
             {CERT_STRIP.map((c) => (
-              <span key={c} className="data text-[13px] font-medium tracking-wide text-on-primary/75">
+              <span key={c} className="data text-[13px] font-medium tracking-wide text-on-primary/90">
                 {c}
               </span>
             ))}
@@ -206,7 +232,7 @@ export default function Home() {
             <h2 className="h-display mt-3 text-[28px] md:text-[34px]">
               We quote rather than list prices
             </h2>
-            <p className="mt-4 text-[15px] leading-relaxed text-on-primary/80">
+            <p className="mt-4 text-[15px] leading-relaxed text-on-primary/90">
               Marine procurement runs on negotiated, volume-based terms. Build a request,
               send it, and our team responds with a formal quotation including lead time,
               freight and applicable VAT.
@@ -223,7 +249,7 @@ export default function Home() {
               <li key={t} className="bg-primary-soft p-6">
                 <span className="data text-[12px] text-tint">{String(i + 1).padStart(2, "0")}</span>
                 <h3 className="h-display mt-3 text-[17px]">{t}</h3>
-                <p className="mt-2 text-[13px] leading-relaxed text-on-primary/75">{d}</p>
+                <p className="mt-2 text-[13px] leading-relaxed text-on-primary/90">{d}</p>
               </li>
             ))}
           </ol>

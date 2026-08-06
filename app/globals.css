@@ -73,7 +73,9 @@
   --color-tint: 232 220 192; /* #E8DCC0  the sand doubles as the light-on-dark tint */
   --color-text: 18 53 75; /* #12354B */
   --color-text-on-primary: 244 246 247; /* #F4F6F7 */
-  --color-text-on-accent: 7 34 43; /* #07222B */
+  --color-text-on-accent: 0 0 0; /* #000000  was #07222B, which read 4.06:1 on the
+                                    teal accent — under AA for the button labels that
+                                    sit on it site-wide. Black gives 5.16:1. */
 }
 
 /* ---- theme: Chandlery — industrial, bold, high-contrast ---- */
